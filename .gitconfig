@@ -1,0 +1,7 @@
+[user]
+	name = jeffgodwyll
+	email = jeffgodwyll@gmail.com
+[credential]
+	helper = cache -timeout=3600
+[core]
+	editor = subl -n -w
