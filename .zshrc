@@ -92,3 +92,4 @@ alias settings=gnome-control-center
 alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
 alias hdmi='xrandr --output HDMI1 --auto --right-of LVDS1'
 alias suspend='sudo pm-suspend'
+alias lock='i3lock -c #1E90FF'
