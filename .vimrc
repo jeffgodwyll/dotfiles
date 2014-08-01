@@ -24,6 +24,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mitsuhiko/vim-jinja'
+Plugin 'jmcantrell/vim-virtualenv'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
