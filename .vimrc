@@ -24,7 +24,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mitsuhiko/vim-jinja'
-
+Plugin 'majutsushi/tagbar'
 " Plugins from vimscripts org
 
 call vundle#end()            " required
