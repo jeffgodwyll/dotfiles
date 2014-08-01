@@ -23,10 +23,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mitsuhiko/vim-jinja'
 
 " Plugins from vimscripts org
-
-
 
 call vundle#end()            " required
 filetype plugin indent on    " required
