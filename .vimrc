@@ -5,6 +5,7 @@ filetype off                  " required
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
+:color twilight
 " Key mapping for revealing line numbers Control N twice
 nmap <C-N><C-N> :set invnumber<CR>
 
