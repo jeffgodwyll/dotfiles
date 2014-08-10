@@ -29,7 +29,7 @@ Plugin 'jmcantrell/vim-virtualenv'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
-
+Plugin 'scrooloose/nerdtree' 
 " Plugins from vimscripts org
 
 call vundle#end()            " required
