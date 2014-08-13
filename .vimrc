@@ -14,7 +14,7 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 nmap <C-N><C-N> :set invnumber<CR>
 
 " Key mapping for nerdtree
-nmap <C-n><C-t>
+nmap <C-n><C-t> :NERDTreeToggle<CR>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
