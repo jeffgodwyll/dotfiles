@@ -39,6 +39,7 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'klen/python-mode'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
