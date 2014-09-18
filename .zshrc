@@ -36,12 +36,16 @@ antigen apply
 export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/platform-tools:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/tools:/usr/bin:/bin:/usr/local/bin:/usr/lib/jvm/java-7-openjdk-amd64:/algs4/bin"
 ### Add -/algs4/bin to the PATH
 export PATH=$PATH:$HOME/algs4/bin
+# Google Cloud SDK
+export PATH=$PATH:$HOME/Downloads/google_appengine
 
 # Aliases
 alias ranger='~/Downloads/ranger-1.6.1/ranger.py'
 alias chrome=google-chrome-unstable
 alias settings=gnome-control-center
 alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
+alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias hdmi='xrandr --output HDMI1 --auto --right-of LVDS1'
 alias suspend='sudo pm-suspend'
 alias lock='i3lock -c #1E90FF'
+alias reload_sound='pulseaudio -k && sudo alsa force-reload'
