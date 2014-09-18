@@ -5,7 +5,16 @@ filetype off                  " required
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
-:color twilight
+" search highlight
+set hlsearch
+
+color twilight
+
+" if strftime("%H") < 12
+"  set background=light
+" else
+"  set background=dark
+" endif
 
 " Key Mappings
 """
@@ -47,11 +56,6 @@ Plugin 'scrooloose/nerdtree'
 " Plugins from vimscripts org
 
 call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-
-" see :h vundle for more details or wiki for FAQ
 
 " open nerdtree
 " autocmd vimenter * NERDTree
