@@ -12,11 +12,18 @@
 set $mod Mod4
 
 #desktop background color
-exec xsetroot -solid "#3333333"
+#exec xsetroot -solid "#3333333"
+exec --no-startup-id feh --bg-fill /home/jeff/Pictures/Wallpapers/IMG.jpg
+
+client.focused #3F8AC2 #096BAA #00BAA7 #00DA8E
+client.focused_inactive #333333 #5F676A #ffffff #484e50
+client.unfocused #333333 #424242 #888888 #292d2e
+client.urgent #C10004 #900000 #ffffff #900000
 
 # font for window titles. ISO 10646 = Unicode
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango: Monospace 9
+# font pango: Monospace 9
+font pango: Ubuntu Mono 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -155,6 +162,9 @@ bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/scre
 bar {
     position top
     status_command    i3status
-    
+    colors{
+        background #232323
+        statusline #DCDCDC
+    }
 }
 
