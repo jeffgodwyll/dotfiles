@@ -6,10 +6,12 @@ set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 " Set tabstop to 4
-
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+" Convert hardtabs to spaces always ;)
+set expandtab
 
 " search highlight
 set hlsearch
