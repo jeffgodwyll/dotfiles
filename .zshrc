@@ -38,6 +38,8 @@ export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/adt-bundl
 export PATH=$PATH:$HOME/algs4/bin
 # Google Cloud SDK
 export PATH=$PATH:$HOME/Downloads/google_appengine
+#Python path
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
 # Aliases
 alias ranger='~/Downloads/ranger-1.6.1/ranger.py'
