@@ -5,6 +5,9 @@ filetype off                  " required
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
+" Show row and column
+set ruler
+
 " Auto indenting
 set autoindent
 
@@ -19,7 +22,11 @@ set expandtab
 " search highlight
 set hlsearch
 
+" Theme settings
 color twilight
+
+" No fold on start
+set nofoldenable
 
 " if strftime("%H") < 12
 "  set background=light
