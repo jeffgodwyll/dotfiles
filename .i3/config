@@ -158,7 +158,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# open thunar file manager
+# Frequently used programmes getting their home :)
+
+bindsym $mod+c exec google-chrome-unstable
+bindsym $mod+b exec gnome-control-center
+bindsym $mod+v exec vlc
 bindsym $mod+t exec thunar
 
 #screenshot
