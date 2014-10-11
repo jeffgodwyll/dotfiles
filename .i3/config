@@ -162,7 +162,7 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+c exec google-chrome-unstable
 bindsym $mod+b exec gnome-control-center
-bindsym $mod+v exec vlc
+bindsym $mod+m exec vlc
 bindsym $mod+t exec thunar
 
 #screenshot
