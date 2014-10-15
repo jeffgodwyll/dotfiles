@@ -70,7 +70,7 @@ Plugin 'klen/python-mode'
 " Enhancements
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree' 
- 
+Plugin 'zhaocai/GoldenView.Vim' 
 " Plugins from vimscripts org
 
 call vundle#end()            " required
