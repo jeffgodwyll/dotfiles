@@ -11,7 +11,9 @@
     a = add
     aa = add --all
     c = commit
+    co = checkout
     df = diff
+    p = pull
     rb = rebase
     rba = rebase --abort
     rbc = rebase --continue
