@@ -4,6 +4,8 @@ else
   export EDITOR='vim'
 fi
 
+export TERM='xterm-256color'
+
 source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
@@ -27,7 +29,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 
 # Theme
-antigen theme rixius
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train 
 
 antigen apply
 
