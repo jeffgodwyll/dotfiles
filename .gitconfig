@@ -6,7 +6,7 @@
 	email = jeffgodwyll@gmail.com
 
 [alias]
-    # I like my antigen theme's aliases
+    # I let antigen take care of aliases
     # Plus what i feel is better
     a = add
     aa = add --all
@@ -30,3 +30,8 @@
 	default = simple
 [diff]
     tool = vimdiff
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
