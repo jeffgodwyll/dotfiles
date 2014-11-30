@@ -66,6 +66,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'klen/python-mode'
+Plugin 'nvie/vim-flake8'
+
+" html code completion
+Plugin 'mattn/emmet-vim'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
@@ -86,3 +90,7 @@ call vundle#end()            " required
 
 let g:ctrlp_show_hidden = 1 
 let NERDTreeShowHidden = 1
+
+" enable emmet just for html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
