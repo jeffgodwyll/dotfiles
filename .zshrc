@@ -57,7 +57,7 @@ export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 # install git-flow with apt-get
 # http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
 # http://nvie.com/posts/a-successful-git-branching-model/
-source $HOME/gitflow-completion.zsh
+source $HOME/git-flow-completion.zsh
 
 # Aliases
 alias ranger='~/Downloads/ranger-1.6.1/ranger.py'
