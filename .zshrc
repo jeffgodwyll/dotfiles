@@ -31,8 +31,10 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Theme
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train 
 
+
 antigen apply
 
+# Paths
 # Messy path
 export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/platform-tools:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/tools:/usr/bin:/bin:/usr/local/bin:/usr/lib/jvm/java-7-openjdk-amd64:/algs4/bin"
 
@@ -48,8 +50,14 @@ source '/home/jeff/google-cloud-sdk/path.zsh.inc'
 # The next line enables bash completion for gcloud.
 source '/home/jeff/google-cloud-sdk/completion.zsh.inc'
 
-#Python path
+# Python path
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+
+# git-flow-completion
+# install git-flow with apt-get
+# http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+# http://nvie.com/posts/a-successful-git-branching-model/
+source $HOME/gitflow-completion.zsh
 
 # Aliases
 alias ranger='~/Downloads/ranger-1.6.1/ranger.py'
