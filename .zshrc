@@ -5,6 +5,7 @@ else
 fi
 
 export TERM='xterm-256color'
+export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=960x540
 
 source $HOME/antigen.zsh
 
