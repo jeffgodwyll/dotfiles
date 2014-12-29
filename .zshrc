@@ -39,16 +39,13 @@ antigen apply
 # Messy path
 export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/platform-tools:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/tools:/usr/bin:/bin:/usr/local/bin:/usr/lib/jvm/java-7-openjdk-amd64:/algs4/bin"
 
-### Add -/algs4/bin to the PATH
-export PATH=$PATH:$HOME/algs4/bin
-
-# Google Cloud SDK
-export PATH=$PATH:$HOME/Downloads/google_appengine
+# Games
+export PATH=$PATH:/usr/games
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/jeff/google-cloud-sdk/path.zsh.inc'
 
-# The next line enables bash completion for gcloud.
+# The next line enables zsh completion for gcloud.
 source '/home/jeff/google-cloud-sdk/completion.zsh.inc'
 
 # Python path
