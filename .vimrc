@@ -11,13 +11,33 @@ set ruler
 " Auto indenting
 set autoindent
 
-" Set tabstop to 4
+" Tab Settings, Wraps
+"""""""""""""""""""""
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab               " Convert hardtabs to spaces always ;)
+set wrap
+set colorcolumn=80
 
-" Convert hardtabs to spaces always ;)
-set expandtab
+
+" Disable arrow keys in insert and normal mode 
+""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+nnoremap ; :
+
 
 " search highlight
 set hlsearch
