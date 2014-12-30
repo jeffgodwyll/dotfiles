@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype off                  " required by Vundle
 
 " set line numbers
 set number
@@ -21,23 +21,21 @@ set expandtab               " Convert hardtabs to spaces always ;)
 set wrap
 set colorcolumn=80
 
+" smarter backspacing
+set backspace=indent,eol,start
 
-" Disable arrow keys in insert and normal mode 
-""""""""""""""""""""""""""""""""""""""""""""""
+set history=1000
+set undolevels=1000
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
+" http://stackoverflow.com/a/15317146/2295256
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
-nnoremap ; :
+" enable console mouse
+set mouse=a
 
+syntax on
 
 " search highlight
 set hlsearch
@@ -55,12 +53,33 @@ set nofoldenable
 " endif
 
 " Key Mappings
-"""
+""""""""""""""
 
-" Key mapping for revealing line numbers Control N twice
+" leader keys
+let mapleader = ","
+let maplocalleader = "\\"
+
+
+" Disable arrow keys in insert and normal mode 
+""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+nnoremap ; :
+
+" Control N twice to reveal line numbers
 nmap <C-N><C-N> :set invnumber<CR>
 
-" Key mapping for nerdtree
+" toggle nerdtree file/folder tree
 nmap <C-n><C-t> :NERDTreeToggle<CR>
 
 " powerline
@@ -69,12 +88,31 @@ nmap <C-n><C-t> :NERDTreeToggle<CR>
 set laststatus=2
 set rtp+=~/.local/bin/powerline/bindings/vim
 
+
+" Remove trailing whitespace
+" http://vim.wikia.com/wiki/Remove_unwanted_spaces
+function! StripTrailingWhitespace()
+    if !&binary && &filetype != 'diff'
+        normal mz
+        normal Hmy
+        %s/\s\+$//e
+        normal 'yz<cr>
+        normal `z
+        retab
+    endif
+endfunction
+
+
+" Vundle
+""""""""
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+
 " Plugins from github
-" -------------------
+""""""""""""""""""""" 
 
 " Let Vundle manage Vundle ;)
 Plugin 'gmarik/Vundle.vim'
@@ -96,8 +134,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'elzr/vim-json'
-
-" Plugins from vimscripts org
 
 call vundle#end()            " required
 
