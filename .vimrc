@@ -27,7 +27,26 @@ set backspace=indent,eol,start
 set history=1000
 set undolevels=1000
 
+
+" Setup folder structure
+"
+
+if !isdirectory(expand('~/.vim/undo/', 1))
+    silent call mkdir(expand('~/.vim/undo', 1), 'p')
+endif
+
+if !isdirectory(expand('~/.vim/backup/', 1))
+    silent call mkdir(expand('~/.vim/backup', 1), 'p')
+endif
+
+if !isdirectory(expand('~/.vim/swap/', 1))
+    silent call mkdir(expand('~/.vim/swap', 1), 'p')
+endif
+
 " http://stackoverflow.com/a/15317146/2295256
+" And thanks to jdavis/dotfiles
+set backup
+set writebackup
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
