@@ -35,6 +35,10 @@ antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-
 
 antigen apply
 
+
+# For theme: override virtualenv display config
+BULLETTRAIN_VIRTUALENV_PREFIX='⚡'
+
 # Paths
 # Messy path
 export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/platform-tools:/home/jeff/adt-bundle-linux-x86_64-20140321/sdk/tools:/usr/bin:/bin:/usr/local/bin:/usr/lib/jvm/java-7-openjdk-amd64:/algs4/bin"
