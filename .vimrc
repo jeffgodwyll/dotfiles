@@ -108,6 +108,10 @@ set laststatus=2
 set rtp+=~/.local/bin/powerline/bindings/vim
 
 
+" Enable spell checking for markdown files
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.markdown setlocal spell
+
 " Remove trailing whitespace
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 function! StripTrailingWhitespace()
