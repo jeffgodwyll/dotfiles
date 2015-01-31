@@ -2,6 +2,9 @@ set $mod Mod4
 
 exec --no-startup-id feh --bg-fill /home/jeff/Pictures/Wallpapers/IMG.jpg
 
+# Power options
+bindcode 108 exec ~/dotfiles/i3-exit
+
 # Colors Colors Colors I suck at them :)
 
 client.focused #3F8AC2 #096BAA #00BAA7 #00DA8E
@@ -161,7 +164,8 @@ bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/scre
 # finds out, if available)
 bar {
     position top
-    status_command    i3status
+    # status_command    i3status
+    status_command py3status -c ~/.i3status.conf
     colors{
         background #10252b
         statusline #a8c9e2
