@@ -15,8 +15,8 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle github
 
-antigen bundle python 
-antigen bundle virtualenv 
+antigen bundle python
+antigen bundle virtualenv
 antigen bundle virtualenvwrapper
 antigen bundle pip
 
@@ -30,7 +30,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 
 # Theme
-antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train 
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
 
 antigen apply
@@ -68,7 +68,6 @@ alias settings=gnome-control-center
 alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
 alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias hdmi='xrandr --output HDMI1 --auto --right-of LVDS1'
-alias suspend='sudo pm-suspend'
 alias lock='i3lock -c #1E90FF'
 alias reload_sound='pulseaudio -k && sudo alsa force-reload'
 alias utorrent='utserver -settingspath /opt/utorrent-server-alpha-v3_3/ &'
