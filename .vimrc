@@ -107,7 +107,6 @@ nmap <C-n><C-t> :NERDTreeToggle<CR>
 set laststatus=2
 set rtp+=~/.local/bin/powerline/bindings/vim
 
-
 " Enable spell checking for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.markdown setlocal spell
@@ -157,6 +156,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'elzr/vim-json'
+
+" Distraction-free writing
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 
 call vundle#end()            " required
 
