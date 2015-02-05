@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set encoding=utf-8            " Necessary to show Unicode glyphs
 filetype off                  " required by Vundle
 
 " set line numbers
@@ -60,7 +61,13 @@ syntax on
 set hlsearch
 
 " Theme settings
-color twilight
+" Falback for when colours are not available
+color elflord
+
+" preferred scheme for when there are colors
+if &t_Co >= 256 || has("gui_running")
+    color mustang
+endif
 
 " No fold on start
 set nofoldenable
@@ -79,7 +86,7 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 
-" Disable arrow keys in insert and normal mode 
+" Disable arrow keys in insert and normal mode
 """"""""""""""""""""""""""""""""""""""""""""""
 
 nnoremap <up> <nop>
@@ -101,11 +108,7 @@ nmap <C-N><C-N> :set invnumber<CR>
 " toggle nerdtree file/folder tree
 nmap <C-n><C-t> :NERDTreeToggle<CR>
 
-" powerline
-" installed with pip
-" pip install --user git+git://github.com/Lokaltog/powerline
-set laststatus=2
-set rtp+=~/.local/bin/powerline/bindings/vim
+
 
 " Enable spell checking for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
@@ -134,26 +137,28 @@ call vundle#begin()
 
 
 " Plugins from github
-""""""""""""""""""""" 
+"""""""""""""""""""""
 
 " Let Vundle manage Vundle ;)
 Plugin 'gmarik/Vundle.vim'
 
 " Python IDE
 Plugin 'davidhalter/jedi-vim'
-Plugin 'Lokaltog/vim-powerline'
+" Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
 
+Plugin 'vim-airline'
+
 " html code completion
 Plugin 'mattn/emmet-vim'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree' 
+Plugin 'scrooloose/nerdtree'
 Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'elzr/vim-json'
 
@@ -163,6 +168,11 @@ Plugin 'junegunn/limelight.vim'
 
 call vundle#end()            " required
 
+" Set graphical font for gvim
+if has("gui_running")
+    set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
+endif
+
 " open nerdtree
 " autocmd vimenter * NERDTree
 
@@ -170,9 +180,25 @@ call vundle#end()            " required
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-let g:ctrlp_show_hidden = 1 
+let g:ctrlp_show_hidden = 1
 let NERDTreeShowHidden = 1
 
 " enable emmet just for html/css
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+" powerline
+" installed with pip
+" pip install --user git+git://github.com/Lokaltog/powerline
+set laststatus=2
+" set rtp+=~/.local/bin/powerline/bindings/vim
+" let g:Powerline_symbols = 'unicode'
+" let g:Powerline_stl_path_style = 'short'
+
+" airline
+"""""""""
+let g:airline_theme = 'laederon'
+let g:airline_powerline_fonts = 1
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
+
