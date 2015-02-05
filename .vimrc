@@ -213,3 +213,13 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
+
+" matchtagalways
+""""""""""""""""
+let g:mta_filetypes = {
+    \ 'html': 1,
+    \ 'xhtml': 1,
+    \ 'xml': 1,
+    \ 'jinja': 1,
+    \ 'htmljinja': 1,
+    \}
