@@ -108,6 +108,8 @@ nmap <C-N><C-N> :set invnumber<CR>
 " toggle nerdtree file/folder tree
 nmap <C-n><C-t> :NERDTreeToggle<CR>
 
+" toggle tagbar
+nmap <F8> :TagbarToggle<CR>
 
 
 " Enable spell checking for markdown files
@@ -156,6 +158,10 @@ Plugin 'nvie/vim-flake8'
 
 Plugin 'vim-airline'
 
+Plugin 'fugitive.vim'
+
+"Syntax checking
+Plugin 'scrooloose/syntastic'
 " html code completion
 Plugin 'mattn/emmet-vim'
 
@@ -164,7 +170,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'elzr/vim-json'
-
+" Always highlight tag pairs
+Plugin 'valloric/MatchTagAlways'
 " Distraction-free writing
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
@@ -190,10 +197,11 @@ let NERDTreeShowHidden = 1
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
+set laststatus=2
+
 " powerline
 " installed with pip
 " pip install --user git+git://github.com/Lokaltog/powerline
-set laststatus=2
 " set rtp+=~/.local/bin/powerline/bindings/vim
 " let g:Powerline_symbols = 'unicode'
 " let g:Powerline_stl_path_style = 'short'
@@ -202,6 +210,6 @@ set laststatus=2
 """""""""
 let g:airline_theme = 'laederon'
 let g:airline_powerline_fonts = 1
-let g:airline_enable_branch     = 1
-let g:airline_enable_syntastic  = 1
-
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#virtualenv#enabled = 1
