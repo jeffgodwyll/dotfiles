@@ -114,6 +114,9 @@ nmap <C-n><C-t> :NERDTreeToggle<CR>
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.markdown setlocal spell
 
+" Force markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 " Remove trailing whitespace
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 function! StripTrailingWhitespace()
