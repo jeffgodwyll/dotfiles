@@ -172,6 +172,9 @@ Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'elzr/vim-json'
 " Always highlight tag pairs
 Plugin 'valloric/MatchTagAlways'
+
+Plugin 'shime/vim-livedown'
+
 " Distraction-free writing
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
@@ -223,3 +226,10 @@ let g:mta_filetypes = {
     \ 'jinja': 1,
     \ 'htmljinja': 1,
     \}
+
+" livedown
+""""""""""
+let g:livedown_autorun = 0
+let g:livedown_open = 1
+let g:livedown_port = 1337
+nmap <leader>md :call LivedownPreview()<CR>
