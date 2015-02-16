@@ -152,7 +152,7 @@ bindsym $mod+r mode "resize"
 
 # Frequently used programmes getting their home :)
 
-bindsym $mod+c exec google-chrome-unstable
+bindsym $mod+c exec google-chrome-unstable --disable-gpu
 bindsym $mod+b exec gnome-control-center
 bindsym $mod+m exec vlc
 bindsym $mod+t exec thunar
