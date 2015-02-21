@@ -61,8 +61,8 @@ bindsym $mod+x move workspace to output right
 # bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 '-5%' #decrease sound volume
 # bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +10% && killall -SIGUSR1 i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10% && killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +2% && killall -SIGUSR1 i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -2% && killall -SIGUSR1 i3status
 
 # split in horizontal orientation
 bindsym $mod+h split h
