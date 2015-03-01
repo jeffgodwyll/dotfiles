@@ -144,8 +144,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 
-" Plugins from github
-"""""""""""""""""""""
+" Plugins
+"""""""""
 
 " Let Vundle manage Vundle ;)
 Plugin 'gmarik/Vundle.vim'
@@ -163,10 +163,13 @@ Plugin 'vim-airline'
 
 Plugin 'fugitive.vim'
 
-"Syntax checking
+" Syntax checking
 Plugin 'scrooloose/syntastic'
 " html code completion
 Plugin 'mattn/emmet-vim'
+
+" Syntax checking for i3 config
+Plugin 'PotatoesMaster/i3-vim-syntax'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
