@@ -44,6 +44,11 @@ BULLETTRAIN_VIRTUALENV_PREFIX='⚡'
 # TODO: Clean up
 export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/android-sdk/sdk/platform-tools:/home/jeff/android-sdk/sdk/tools:/usr/bin:/bin:/usr/local/bin:/usr/lib/jvm/java-7-openjdk-amd64:/algs4/bin"
 
+# Linux brew, new package manager
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
 # Games
 export PATH=$PATH:/usr/games
 
