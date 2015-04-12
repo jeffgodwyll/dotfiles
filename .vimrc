@@ -81,14 +81,15 @@ set nofoldenable
 " Key Mappings
 """"""""""""""
 
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
 " leader keys
 let mapleader = ","
 let maplocalleader = "\\"
 
-
 " Disable arrow keys in insert and normal mode
 """"""""""""""""""""""""""""""""""""""""""""""
-
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
