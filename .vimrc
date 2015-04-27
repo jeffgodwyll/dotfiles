@@ -114,11 +114,11 @@ nmap <F8> :TagbarToggle<CR>
 
 " Enable spell checking and force git commit message to be 72 chars per line
 " http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
-autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype gitcommit setlocal spell spelllang=en_gb textwidth=72
 
 " Enable spell checking for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.markdown setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_gb
+autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb
 
 " Force markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
