@@ -3,6 +3,7 @@ My Dotfiles
 
 Overview
 --------
+
 * Window Manager - [i3wm](http://i3wm.org/)
 * [Editor](#editor) - Vim ([Vundle](https://github.com/gmarik/Vundle.vim) handles my vim plugins)
 * Shell - Zsh ([Antigen](https://github.com/zsh-users/antigen) is awesome)
@@ -17,7 +18,8 @@ Nothing fancy and no hassle using conky here. Just load [fontawesome](http://for
 
 ![my i3 bar](https://lh3.googleusercontent.com/-0edPkKmRY14/VCiom6ox_9I/AAAAAAAAGWM/wxlxBddAtNM/w1013-h15-no/my_i3bar.png "my i3 bar")
 
-### Editor
+Editor
+------
 
 My Vim config is optimised to make working with the following easier:
 - Python
@@ -31,6 +33,7 @@ My Vim config is optimised to make working with the following easier:
 
 
 #### Python-specific plugins
+
 - [jedi-vim][], awesome Python autocompletion with Vim
 - [vim-jinja][], jinja support
 - [vim-virtualenv][], for Python virtualenv support
@@ -80,7 +83,9 @@ My Vim config is optimised to make working with the following easier:
   [tagbar]: https://github.com/majutsushi/tagbar
   [vim-powerline]: https://github.com/Lokaltog/vim-powerline
 
-### Colors
+Colours
+-------
+
 In Vim I use the [Mustang colour scheme][mustang]
 
 My terminal uses a variant of [monokai][monokai] or [chalk][] depending on my 
