@@ -3,7 +3,7 @@ set $mod Mod4
 exec --no-startup-id feh --bg-fill /home/jeff/Pictures/Wallpapers/IMG.jpg
 
 # Power options
-bindcode 108 exec ~/dotfiles/i3-exit
+bindcode 124 exec ~/dotfiles/i3-exit
 
 # Colors Colors Colors I suck at them :)
 
