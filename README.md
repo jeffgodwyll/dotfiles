@@ -4,13 +4,29 @@ My Dotfiles
 Overview
 --------
 
-* Window Manager - [i3wm](http://i3wm.org/)
+* [Window Manager](#window-manager) - [i3wm](http://i3wm.org/)
 * [Editor](#editor) - Vim ([Vundle](https://github.com/gmarik/Vundle.vim) handles my vim plugins)
 * Shell - Zsh ([Antigen](https://github.com/zsh-users/antigen) is awesome)
 * Terminal - [Terminator](http://en.wikipedia.org/wiki/Gnome_Terminator)
 
 I use pretty much everything out of the box but I've made some customizations to enhance my workflow
 which I'll explain in a bit ;)
+
+Installation
+------------
+
+    git clone https://github.com/jeffgodwyll/dotfiles.git
+    cd dotfiles
+    ./install
+
+Note, the `install` script can be run multiple times. It's safe :) Under the
+hood, all it's really doing is symlinking the appropriate files into place using
+`install.conf.yaml`.
+
+Uses [dotbot](https://github.com/anishathalye/dotbot) ;)
+
+Window Manager
+--------------
 
 #### i3bar
 
@@ -24,11 +40,12 @@ Editor
 My Vim config is optimised to make working with the following easier:
 - Python
 - JavaScript
-- Java(sometimes)
+
 - CSS
 - HTML
 - Jinja
 - Markdown
+- Java(sometimes)
 - configuration files
 
 

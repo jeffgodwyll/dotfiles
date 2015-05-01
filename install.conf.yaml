@@ -1,0 +1,19 @@
+- clean: ['~']
+
+- link:
+    ~/antigen.zsh: antigen.zsh
+    ~/.config/terminator:
+      create: true
+      path: .config/terminator/
+    ~/.dotfiles: ''
+    ~/.i3: .i3/
+    ~/.i3status.conf: .i3status.conf
+    ~/i3-exit: i3-exit
+    ~/.vim: .vim/
+    ~/.vimrc: .vimrc
+    ~/.ssh: .ssh/
+    ~/.zshrc: .zshrc
+    ~/.gitconfig: .gitconfig
+
+- shell:
+  - git update-submodules # after linking ~/.gitconfig
