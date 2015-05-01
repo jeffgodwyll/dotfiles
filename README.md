@@ -25,22 +25,32 @@ hood, all it's really doing is symlinking the appropriate files into place using
 
 Uses [dotbot](https://github.com/anishathalye/dotbot) ;)
 
+Restart your shell for changes to take effect.
+
+Also to install Vundle Bundles, run the command below:
+    
+    vim +BundleInstall +qall
+
+
 Window Manager
 --------------
 
 #### i3bar
 
-Nothing fancy and no hassle using conky here. Just load [fontawesome](http://fortawesome.github.io/Font-Awesome/) and you're good to go.
+Nothing fancy and no hassle using conky here. 
+Just load [fontawesome](http://fortawesome.github.io/Font-Awesome/) and you're
+good to go.
 
 ![my i3 bar](https://lh3.googleusercontent.com/-0edPkKmRY14/VCiom6ox_9I/AAAAAAAAGWM/wxlxBddAtNM/w1013-h15-no/my_i3bar.png "my i3 bar")
 
 Editor
 ------
 
+Again [Vundle](https://github.com/gmarik/Vundle.vim) handles my Vim plugins.
+
 My Vim config is optimised to make working with the following easier:
 - Python
 - JavaScript
-
 - CSS
 - HTML
 - Jinja
@@ -67,7 +77,7 @@ My Vim config is optimised to make working with the following easier:
 - [ctrlp][], for quick file opening
 - [tagbar][], for improved code outlines / navigations
 - [NERDTree][], for file navigation
-- [GoldenView][], always have a nice view for vim split windows
+- [GoldenView][], always have a nice view for Vim split windows
 - [vim-json][], distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing.
 - [MatchTagAlways][], always highlight tag pairs
 - [vim-livedown][], for live preview of Markdown files
