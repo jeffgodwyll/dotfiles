@@ -71,6 +71,8 @@ export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 source $HOME/git-flow-completion.zsh
 
 # Aliases
+alias aria='aria2c --file-allocation=none -c -x 10'
+alias aria_list='aria2c --file-allocation=none --force-sequential=true -c -x 10 -i'
 alias ranger='~/Downloads/ranger-1.6.1/ranger.py'
 alias chrome=google-chrome-unstable
 alias settings=gnome-control-center
