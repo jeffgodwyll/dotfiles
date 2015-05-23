@@ -60,6 +60,9 @@ syntax on
 " search highlight
 set hlsearch
 
+set ignorecase " ignore case
+set smartcase  " smart search
+
 " Theme settings
 " Falback for when colours are not available
 color elflord
@@ -117,8 +120,8 @@ nmap <F8> :TagbarToggle<CR>
 autocmd Filetype gitcommit setlocal spell spelllang=en_gb textwidth=72
 
 " Enable spell checking for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_gb
-autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_gb textwidth=80
+autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb textwidth=80
 
 " Force markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
