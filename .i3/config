@@ -172,6 +172,8 @@ bar {
     position top
     # status_command    i3status
     status_command py3status -c ~/.i3status.conf
+    mode hide
+    tray_output LVDS1
     colors{
         background #10252b
         statusline #a8c9e2
