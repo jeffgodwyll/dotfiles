@@ -120,6 +120,9 @@ bindsym $mod+Shift+asterisk move container to workspace number 8
 bindsym $mod+Shift+parenleft move container to workspace number 9
 bindsym $mod+Shift+parenright move container to workspace number 10
 
+# border changing, cycle through normal, 1px and none values
+bindsym $mod+F12 border toggle
+
 # reload the configuration file
 bindsym $mod+Shift+C reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
