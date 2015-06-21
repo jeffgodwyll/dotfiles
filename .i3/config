@@ -87,6 +87,12 @@ bindsym $mod+a focus parent
 # focus the child container
 # bindcode $mod+d focus child
 
+# Mod1 is for Alt, So mainly Alt+Tab to switch b/n windows
+bindsym Mod1+Tab focus right
+bindsym Mod1+Shift+Tab focus left
+# last used workspace
+bindsym $mod+Tab workspace back_and_forth
+
 # rename workspace to reflect what's actually on them
 bindsym $mod+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New workspace name(<num>: <name>) -> '
 
