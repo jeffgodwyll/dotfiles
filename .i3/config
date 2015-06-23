@@ -7,12 +7,38 @@ bindcode 124 exec ~/dotfiles/i3-exit
 
 # Colors Colors Colors I suck at them :)
 
-client.focused #3F8AC2 #096BAA #00BAA7 #00DA8E
-client.focused_inactive #333333 #5F676A #ffffff #484e50
-client.unfocused #333333 #424242 #888888 #292d2e
-client.urgent #C10004 #900000 #ffffff #900000
+# client.focused #3F8AC2 #096BAA #00BAA7 #00DA8E
+# client.focused_inactive #333333 #5F676A #ffffff #484e50
+# client.unfocused #333333 #424242 #888888 #292d2e
+# client.urgent #C10004 #900000 #ffffff #900000
 
-font pango:Source Ubuntu Mono, FontAwesome 9
+# color defines for zenburn styled i3
+# set $bg     #2c2c2e
+# set $fg     #9f9f9f
+# set $hi     #efef8f
+# set $ac     #a0afa0
+# set $tx     #040404
+# set $ia     #8f8f8f
+# set $be     #8faf9f
+# set $yw     #ccdc90
+# set $gn     #88b090
+# set $rd     #e89393
+
+# color defines for my custom-styled chrome theme for i3
+set $ac #1B324B
+set $bg #112131
+set $tx #33B9FC
+set $ia #7A88A9
+set $rd #e89393
+set $bo #1A2E49
+
+# set some nice colors      border     background  text
+client.focused              $ac        $ac         $tx
+client.unfocused            $bo        $bg         $ia
+client.focused_inactive     $bg        $bg         $tx
+client.urgent               $rd        $rd         $tx
+
+font pango:Source Source Code Pro for Powerline 10, FontAwesome 9
 
 # add support for media keys and other gnome settings
 exec gnome-settings-daemon
@@ -174,7 +200,6 @@ bar {
     position top
     # status_command    i3status
     status_command py3status -c ~/.i3status.conf
-    mode hide
     tray_output LVDS1
     colors{
         background #10252b
