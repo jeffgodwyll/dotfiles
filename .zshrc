@@ -17,7 +17,6 @@ antigen bundle github
 
 antigen bundle python
 antigen bundle virtualenv
-antigen bundle virtualenvwrapper
 antigen bundle pip
 
 antigen bundle npm
@@ -54,6 +53,11 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 # Games
 export PATH=$PATH:/usr/games
+
+# Google App Engine, dev_appserver and appcfg  PATH
+# TODO: Stop using this in the future after learning to properly use the newer
+# gcloud tool
+export PATH=$PATH:$HOME/google_appengine/
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/jeff/google-cloud-sdk/path.zsh.inc'
