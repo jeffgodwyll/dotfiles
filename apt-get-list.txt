@@ -1,0 +1,12 @@
+zsh
+ruby
+git
+python
+terminator
+lxappearance
+gtk-chtheme
+qt4-qtconfig
+indicator-sound
+thunar
+feh
+imagemagick
