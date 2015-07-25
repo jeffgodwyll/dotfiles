@@ -11,7 +11,7 @@ makethunardefault()
 ## I didn't want to bring in a whole lot of junk,
 ## and Jaunty installs recommended packages by default.
 echo -e "\nMaking sure Thunar is installed\n"
-sudo apt-get update && sudo apt-get install thunar --no-install-recommends
+# sudo apt-get update && sudo apt-get install thunar --no-install-recommends
 
 ## Does it make sense to change to the directory?
 ## Or should all the individual commands just reference the full path?
