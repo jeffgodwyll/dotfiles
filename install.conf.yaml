@@ -14,6 +14,7 @@
     ~/.ssh: .ssh/
     ~/.zshrc: .zshrc
     ~/.gitconfig: .gitconfig
+    ~/git-flow-completion.zsh: git-flow-completion.zsh
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
