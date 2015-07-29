@@ -1,8 +1,10 @@
+aria2c
 feh
 git
 gtk-chtheme
 imagemagick
 indicator-sound
+lib32stdc++6
 lxappearance
 python
 qt4-qtconfig
