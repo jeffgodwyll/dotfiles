@@ -53,6 +53,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec terminator
 
+# start terminator with alternative layout
+bindsym $mod+Shift+Return exec terminator -l preferred
+
 # kill focused window
 bindsym $mod+Shift+Q kill
 
