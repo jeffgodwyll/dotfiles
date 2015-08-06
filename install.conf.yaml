@@ -5,6 +5,9 @@
     ~/.config/terminator:
       create: true
       path: .config/terminator/
+    ~/.config/htop:
+      create: true
+      path: .config/htop/
     ~/.dotfiles: ''
     ~/.i3: .i3/
     ~/.i3status.conf: .i3status.conf
