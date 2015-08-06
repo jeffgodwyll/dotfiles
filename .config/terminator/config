@@ -71,7 +71,40 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
     [[[window0]]]
       type = Window
       parent = ""
+  [[preferred]]
+    [[[child0]]]
+      position = 1366:37
+      type = Window
+      order = 0
+      parent = ""
+      size = 1276, 985
+    [[[child1]]]
+      position = 721
+      type = VPaned
+      order = 0
+      parent = child0
+    [[[child3]]]
+      position = 638
+      type = HPaned
+      order = 1
+      parent = child1
+    [[[terminal2]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child1
+    [[[terminal5]]]
+      profile = Twilight
+      type = Terminal
+      order = 1
+      parent = child3
+    [[[terminal4]]]
+      profile = DimmedMonokai
+      type = Terminal
+      order = 0
+      parent = child3
 [plugins]
