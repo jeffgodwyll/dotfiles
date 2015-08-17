@@ -7,6 +7,7 @@
   title_inactive_bg_color = "#6f3552"
 [keybindings]
   switch_to_tab_10 = <Alt>0
+  split_horiz = <Primary><Alt>h
   switch_to_tab_6 = <Alt>6
   switch_to_tab_7 = <Alt>7
   switch_to_tab_4 = <Alt>4
@@ -14,9 +15,18 @@
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
   switch_to_tab_1 = <Alt>1
+  split_vert = <Primary><Alt>v
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
 [profiles]
+  [[DimmedMonokai]]
+    palette = "#3a3d43:#be3f48:#879a3b:#c5a635:#4f76a1:#855c8d:#578fa4:#b9bcba:#888987:#fb001f:#0f722f:#c47033:#186de3:#fb0067:#2e706d:#fdffb9"
+    background_image = None
+    use_system_font = False
+    cursor_color = "#f83e19"
+    foreground_color = "#b9bcba"
+    font = Source Code Pro for Powerline Medium 10
+    background_color = "#1f1f1f"
   [[default]]
     palette = "#7d8b8f:#b23a52:#789b6a:#b9ac4a:#2a7fac:#bd4f5a:#44a799:#d2d8d9:#888888:#f24840:#80c470:#ffeb62:#4196ff:#fc5275:#53cdbd:#d2d8d9"
     background_image = None
@@ -27,12 +37,6 @@
     font = Source Code Pro for Powerline Medium 10
     background_color = "#2b2d2e"
     scrollback_infinite = True
-  [[Jellybeans]]
-    palette = "#929292:#e27373:#94b979:#ffba7b:#97bedc:#e1c0fa:#00988e:#dedede:#bdbdbd:#ffa1a1:#bddeab:#ffdca0:#b1d8f6:#fbdaff:#1ab2a8:#ffffff"
-    background_color = "#121212"
-    background_image = None
-    cursor_color = "#ffa560"
-    foreground_color = "#dedede"
   [[old-default]]
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     use_system_font = False
@@ -51,14 +55,12 @@
     background_image = None
     cursor_color = "#a5a2a2"
     foreground_color = "#a5a2a2"
-  [[DimmedMonokai]]
-    palette = "#3a3d43:#be3f48:#879a3b:#c5a635:#4f76a1:#855c8d:#578fa4:#b9bcba:#888987:#fb001f:#0f722f:#c47033:#186de3:#fb0067:#2e706d:#fdffb9"
+  [[Jellybeans]]
+    palette = "#929292:#e27373:#94b979:#ffba7b:#97bedc:#e1c0fa:#00988e:#dedede:#bdbdbd:#ffa1a1:#bddeab:#ffdca0:#b1d8f6:#fbdaff:#1ab2a8:#ffffff"
+    background_color = "#121212"
     background_image = None
-    use_system_font = False
-    cursor_color = "#f83e19"
-    foreground_color = "#b9bcba"
-    font = Source Code Pro for Powerline Medium 10
-    background_color = "#1f1f1f"
+    cursor_color = "#ffa560"
+    foreground_color = "#dedede"
   [[Twilight]]
     palette = "#141414:#c06d44:#afb97a:#c2a86c:#44474a:#b4be7c:#778385:#ffffd4:#262626:#de7c4c:#ccd88c:#e2c47e:#5a5e62:#d0dc8e:#8a989b:#ffffd4"
     background_image = None
