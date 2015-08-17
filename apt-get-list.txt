@@ -1,4 +1,4 @@
-aria2c
+aria2
 feh
 git
 gtk-chtheme
@@ -11,4 +11,5 @@ qt4-qtconfig
 ruby
 terminator
 thunar
+xchat
 zsh
