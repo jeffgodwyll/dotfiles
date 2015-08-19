@@ -94,6 +94,10 @@ bindsym XF86AudioRaiseVolume exec amixer -q set PCM 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set PCM 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set PCM toggle
 
+# brightness controls
+bindsym XF86MonBrightnessDown exec ~/dotfiles/bin/brightness - 10
+bindsym XF86MonBrightnessUp exec ~/dotfiles/bin/brightness + 10
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
