@@ -78,7 +78,7 @@ source $HOME/git-flow-completion.zsh
 alias aria='aria2c --file-allocation=none -c -x 10'
 alias aria_list='aria2c --file-allocation=none --force-sequential=true -c -x 10 -i'
 alias chrome=google-chrome-unstable
-alias hdmi='xrandr --output hdmi1 --auto --right-of lvds1'
+alias hdmi='xrandr --output HDMI1 --auto --right-of LVDS1'
 alias lock='i3lock -c #1e90ff'
 alias ranger='~/downloads/ranger-1.6.1/ranger.py'
 alias reload_sound='pulseaudio -k && sudo alsa force-reload'
@@ -86,5 +86,5 @@ alias route_sound='pactl load-module module-loopback'
 alias settings=gnome-control-center
 alias unroute_sound='pactl unload-module module-loopback'
 alias utorrent='utserver -settingspath /opt/utorrent-server-alpha-v3_3/ &'
-alias vga='xrandr --output vga1 --auto --right-of lvds1'
-alias vga_same='xrandr --output vga1 --auto --same-as lvds1'
+alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
+alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
