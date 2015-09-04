@@ -106,6 +106,7 @@ nnoremap k gk
 
 nnoremap ; :
 
+
 " Control N twice to reveal line numbers
 nmap <C-N><C-N> :set invnumber<CR>
 
@@ -114,6 +115,9 @@ nmap <C-n><C-t> :NERDTreeToggle<CR>
 
 " toggle tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" Mapping to run python code in vim
+autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 " Enable spell checking and force git commit message to be 72 chars per line
 " http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
