@@ -11,5 +11,6 @@ qt4-qtconfig
 ruby
 terminator
 thunar
+tree
 xchat
 zsh
