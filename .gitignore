@@ -4,4 +4,5 @@
 .ropeproject/
 .vim/bundle
 .vim/backup
+.vim/swap
 .ssh/
