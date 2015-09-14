@@ -86,9 +86,11 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# move the whole workspace to the next output
+# move the whole workspace to the next output(horizontal)
 bindsym $mod+x move workspace to output right
 
+# move workspace to next output(vertical)
+bindsym $mod+Shift+x move workspace to output up
 # volume controls
 bindsym XF86AudioRaiseVolume exec amixer -q set PCM 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set PCM 2dB- unmute
