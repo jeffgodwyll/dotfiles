@@ -100,9 +100,15 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 
 # volume controls
 
-bindsym XF86AudioRaiseVolume exec amixer -q set PCM 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set PCM 2dB- unmute
-bindsym XF86AudioMute exec amixer -q set PCM toggle
+# Pulse Audio controls for sink 0, perform pulseaudio -k to use usb headset as
+# sink 0
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 -- +5% #increase volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% #decrease volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
+# bindsym XF86AudioRaiseVolume exec amixer -q set PCM 2dB+ unmute
+# bindsym XF86AudioLowerVolume exec amixer -q set PCM 2dB- unmute
+# bindsym XF86AudioMute exec amixer -q set PCM toggle
 
 # brightness controls
 bindsym XF86MonBrightnessDown exec ~/dotfiles/bin/brightness - 10
