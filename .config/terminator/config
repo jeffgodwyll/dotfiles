@@ -28,9 +28,19 @@
     foreground_color = "#b9bcba"
     font = Source Code Pro for Powerline Medium 10
     background_color = "#1f1f1f"
+  # MaterialDark
+  [[MaterialDark]]
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+    background_image = None
+    use_system_font = False
+    cursor_color = "#16afca"
+    foreground_color = "#e5e5e5"
+    font = Source Code Pro for Powerline Medium 10
+    background_color = "#232322"
   [[default]]
     palette = "#7d8b8f:#b23a52:#789b6a:#b9ac4a:#2a7fac:#bd4f5a:#44a799:#d2d8d9:#888888:#f24840:#80c470:#ffeb62:#4196ff:#fc5275:#53cdbd:#d2d8d9"
     background_image = None
+    background_darkness = 0.95
     use_system_font = False
     cursor_color = "#708284"
     foreground_color = "#d2d8d9"
