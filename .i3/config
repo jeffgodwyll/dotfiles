@@ -161,6 +161,7 @@ bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
+bindsym F2 workspace 10
 # move focused container to workspace
 bindsym $mod+Shift+exclam move container to workspace number 1
 bindsym $mod+Shift+at move container to workspace number 2
