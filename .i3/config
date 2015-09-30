@@ -212,6 +212,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Make currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show first scratchpad window
+bindsym $mod+minus scratchpad show
+
 # Frequently used programmes getting their home :)
 
 bindsym $mod+c exec google-chrome-unstable --disable-gpu
