@@ -186,6 +186,8 @@ Plugin 'zhaocai/GoldenView.Vim'
 Plugin 'elzr/vim-json'
 " Always highlight tag pairs
 Plugin 'valloric/MatchTagAlways'
+" Add surrounding pairs: brackets, parentheses, quotes, tags etc
+Plugin 'tpope/vim-surround'
 
 Plugin 'shime/vim-livedown'
 
