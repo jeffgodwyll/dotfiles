@@ -1,6 +1,7 @@
 aria2
 feh
 git
+git-gui
 gtk-chtheme
 highlight
 imagemagick
