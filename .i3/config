@@ -187,6 +187,12 @@ bindsym $mod+Shift+asterisk move container to workspace number 8$w8
 bindsym $mod+Shift+parenleft move container to workspace number 9$w9
 bindsym $mod+Shift+parenright move container to workspace number 10$w10
 
+assign [class="google-chrome-unstable"] 1$w1
+assign [class="Terminator"] 2$w2
+assign [class="Spotify"] 3$w3
+assign [class="Thunar"] 4$w4
+assign [class="Xchat"] 5$w5
+
 # border changing, cycle through normal, 1px and none values
 bindsym $mod+F12 border toggle
 
