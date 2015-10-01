@@ -18,6 +18,7 @@
     ~/.zshrc: .zshrc
     ~/.gitconfig: .gitconfig
     ~/git-flow-completion.zsh: git-flow-completion.zsh
+    ~/.tmux.conf: .tmux.conf
 
 - shell:
   - git update-submodules # after linking ~/.gitconfig
