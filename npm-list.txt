@@ -1,0 +1,7 @@
+bower
+devtools-terminal
+gifsicle
+gulp
+http-server
+imageoptim-cli
+npm
