@@ -209,7 +209,6 @@ endif
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-let g:ctrlp_show_hidden = 1
 let NERDTreeShowHidden = 1
 
 " enable emmet just for html/css
@@ -249,3 +248,9 @@ let g:livedown_autorun = 0
 let g:livedown_open = 1
 let g:livedown_port = 1337
 nmap <leader>md :call LivedownPreview()<CR>
+
+" CrtlP
+"""""""
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = 'r'  " r=nearest .git,.hg,.svn,.bzr,_darcs dirs
+nmap <leader>p :CtrlP<cr>
