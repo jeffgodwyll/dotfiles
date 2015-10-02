@@ -4,4 +4,7 @@ gifsicle
 gulp
 http-server
 imageoptim-cli
+jshint
+js-yaml
 npm
+PrettyCSS
