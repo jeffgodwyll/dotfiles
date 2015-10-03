@@ -2,6 +2,8 @@ set $mod Mod4
 
 exec --no-startup-id feh --bg-fill /home/jeff/Pictures/Wallpapers/IMG.jpg
 
+focus_on_window_activation urgent
+
 # Power options
 bindcode 124 exec ~/dotfiles/i3-exit
 
@@ -262,7 +264,7 @@ bar {
         background #10252b
         statusline #a8c9e2
         separator #c3bb4c
-         # workspace:       border  bg      text
+        # workspace:       border  bg      text
         focused_workspace  #30328f #18191a #a8c9e2
         active_workspace   #63cbc2 #18191a #63cbc2
         inactive_workspace #232323 #18191a #a8c9e2
