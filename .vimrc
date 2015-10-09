@@ -258,3 +258,20 @@ nmap <leader>p :CtrlP<cr>
 " Syntastic
 """""""""""
 let g:syntastic_javascript_checkers = ['jshint']
+
+" Pymode
+""""""""
+" [[ Jump to previous class or function (normal, visual, operator modes)
+" ]] Jump to next class or function  (normal, visual, operator modes)
+" [M Jump to previous class or method (normal, visual, operator modes)
+" ]M Jump to next class or method (normal, visual, operator modes)
+" aC Select a class. Ex: vaC, daC, yaC, caC (normal, operator modes)
+" iC Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)
+" aM Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)
+" iM Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)
+let g:pymode_run = 1
+let g:pymode_run_bind = '<leader>r' " run python code from within vim
+let g:pymode_breakpoint = 1 " breakpoint settings
+let g:pymode_breakpoint_bind = '<leader>b'
+let g:pymode_breakpoint_cmd = ''
+let g:pymode_folding = 0
