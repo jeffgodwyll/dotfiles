@@ -12,6 +12,13 @@ Overview
 I use pretty much everything out of the box but I've made some customizations to enhance my workflow
 which I'll explain in a bit ;)
 
+Requirements
+------------
+
+Set zsh as login shell:
+
+    chsh -s $(which zsh)
+
 Installation
 ------------
 
@@ -28,7 +35,7 @@ Uses [dotbot](https://github.com/anishathalye/dotbot) ;)
 Restart your shell for changes to take effect.
 
 Also to install Vundle Bundles, run the command below:
-    
+
     vim +BundleInstall +qall
 
 
@@ -37,7 +44,7 @@ Window Manager
 
 #### i3bar
 
-Nothing fancy and no hassle using conky here. 
+Nothing fancy and no hassle using conky here.
 Just load [fontawesome](http://fortawesome.github.io/Font-Awesome/) and you're
 good to go.
 
@@ -94,7 +101,7 @@ My Vim config is optimised to make working with the following easier:
   [Goyo]: https://github.com/junegunn/goyo.vim
   [vimmarkdown]: https://github.com/tpope/vim-markdown
   [vim-livedown]: https://github.com/shime/vim-livedown
-  [GoldenView]: https://github.com/zhaocai/GoldenView 
+  [GoldenView]: https://github.com/zhaocai/GoldenView
   [syntastic]: https://github.com/scrooloose/syntastic
   [jedi-vim]: https://github.com/davidhalter/jedi-vimx
   [MatchTagAlways]: https://github.com/Valloric/MatchTagAlways
@@ -115,7 +122,7 @@ Colours
 
 In Vim I use the [Mustang colour scheme][mustang]
 
-My terminal uses a variant of [monokai][monokai] or [chalk][] depending on my 
+My terminal uses a variant of [monokai][monokai] or [chalk][] depending on my
 mood :) and probably because they blend in nicely with my
 [bullet train zsh theme][bt].
 
