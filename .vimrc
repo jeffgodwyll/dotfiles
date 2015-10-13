@@ -72,6 +72,14 @@ if &t_Co >= 256 || has("gui_running")
     color mustang
 endif
 
+" highlight current line in active window
+augroup CursorLineOnlyInActiveWindow
+    autocmd!
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline 
+    hi CursorLine cterm=NONE " remove underline in term mode
+    autocmd WinLeave * setlocal nocursorline
+augroup END
+
 " No fold on start
 set nofoldenable
 
