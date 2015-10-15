@@ -196,6 +196,7 @@ Plugin 'elzr/vim-json'
 Plugin 'valloric/MatchTagAlways'
 " Add surrounding pairs: brackets, parentheses, quotes, tags etc
 Plugin 'tpope/vim-surround'
+Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'shime/vim-livedown'
 
