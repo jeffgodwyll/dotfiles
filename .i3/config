@@ -65,7 +65,7 @@ bindsym $mod+Shift+Q kill
 # bindsym $mod+d exec dmenu_run
 
 # Better dmenu 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nb #10252b -nf #a8c9e2"
 
 # change focus
 bindsym $mod+j focus left
