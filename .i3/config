@@ -157,7 +157,8 @@ bindsym $mod+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New workspace na
 # workspace names
 # for example workspace numbered 1 = personal chrome windows
 set $w1 : <span foreground="#4285F4">chrome/p</span>
-set $w2 : <span foreground="#EA4335">vim</span>
+# shell workspace holds vim and tmux sessions
+set $w2 : <span foreground="#EA4335">shell</span>
 set $w3 : <span foreground="#fbbc05">spotify</span>
 set $w4 : <span foreground="#4285f4">files/videos</span>
 set $w5 : <span foreground="#34a853">irc</span>
