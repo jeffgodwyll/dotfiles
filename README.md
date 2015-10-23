@@ -34,8 +34,8 @@ hood, all it's really doing is symlinking the appropriate files into place using
 
 Uses [dotbot](https://github.com/anishathalye/dotbot) ;)
 
-Restart your shell for changes to take effect. Or just source your `.zshrc`
-file:
+Restart your shell for changes to take effect and to install and set up
+antigen. Or just source your `.zshrc` file for the changes to kick in:
 
     source .zshrc
 
