@@ -17,9 +17,9 @@ Requirements
 
 - Set zsh as login shell:
 
-    chsh -s $(which zsh)
+        chsh -s $(which zsh)
 
-- Vim compiled with pythob
+- Vim compiled with python
 
 Installation
 ------------
