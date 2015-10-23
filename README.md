@@ -15,9 +15,11 @@ which I'll explain in a bit ;)
 Requirements
 ------------
 
-Set zsh as login shell:
+- Set zsh as login shell:
 
     chsh -s $(which zsh)
+
+- Vim compiled with pythob
 
 Installation
 ------------
@@ -32,12 +34,14 @@ hood, all it's really doing is symlinking the appropriate files into place using
 
 Uses [dotbot](https://github.com/anishathalye/dotbot) ;)
 
-Restart your shell for changes to take effect.
+Restart your shell for changes to take effect. Or just source your `.zshrc`
+file:
+
+    source .zshrc
 
 Also to install Vundle Bundles, run the command below:
 
     vim +BundleInstall +qall
-
 
 Window Manager
 --------------
