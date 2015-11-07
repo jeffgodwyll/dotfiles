@@ -15,12 +15,18 @@ set autoindent
 " Tab Settings, Wraps
 """""""""""""""""""""
 
+" 4 spaces globally
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab               " Convert hardtabs to spaces always ;)
 set wrap
 set colorcolumn=80
+
+" html, 2 spaces 
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+" js, 2 spaces
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
 " smarter backspacing
 set backspace=indent,eol,start
