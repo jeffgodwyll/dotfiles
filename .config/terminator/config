@@ -31,6 +31,14 @@
     font = Source Code Pro for Powerline Medium 10
     background_color = "#2b2d2e"
     scrollback_infinite = True
+  [[DimmedMonokai]]
+    palette = "#3a3d43:#be3f48:#879a3b:#c5a635:#4f76a1:#855c8d:#578fa4:#b9bcba:#888987:#fb001f:#0f722f:#c47033:#186de3:#fb0067:#2e706d:#fdffb9"
+    background_image = None
+    use_system_font = False
+    cursor_color = "#f83e19"
+    foreground_color = "#b9bcba"
+    font = Source Code Pro for Powerline Medium 10
+    background_color = "#1f1f1f"
   [[default]]
     palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
     background_image = None
@@ -38,15 +46,16 @@
     cursor_color = "#16afca"
     foreground_color = "#e5e5e5"
     show_titlebar = False
-    font = Source Code Pro for Powerline Medium 10
+    font = Ubuntu Mono derivative Powerline 10
     background_color = "#232322"
     scrollback_infinite = True
-  [[Jellybeans]]
-    palette = "#929292:#e27373:#94b979:#ffba7b:#97bedc:#e1c0fa:#00988e:#dedede:#bdbdbd:#ffa1a1:#bddeab:#ffdca0:#b1d8f6:#fbdaff:#1ab2a8:#ffffff"
-    background_color = "#121212"
+  [[Twilight]]
+    palette = "#141414:#c06d44:#afb97a:#c2a86c:#44474a:#b4be7c:#778385:#ffffd4:#262626:#de7c4c:#ccd88c:#e2c47e:#5a5e62:#d0dc8e:#8a989b:#ffffd4"
     background_image = None
-    cursor_color = "#ffa560"
-    foreground_color = "#dedede"
+    use_system_font = False
+    cursor_color = "#ffffff"
+    foreground_color = "#ffffd4"
+    font = Liberation Mono for Powerline 10
   [[old-default]]
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     use_system_font = False
@@ -56,7 +65,7 @@
     cursor_color = "#7bf517"
     foreground_color = "#f8eaea"
     background_image = None
-    font = Ubuntu Mono derivative Powerline 13
+    font = Ubuntu Mono derivative Powerline 10
     background_color = "#2e1b1b"
     scrollback_infinite = True
   [[3024 Night]]
@@ -65,14 +74,12 @@
     background_image = None
     cursor_color = "#a5a2a2"
     foreground_color = "#a5a2a2"
-  [[DimmedMonokai]]
-    palette = "#3a3d43:#be3f48:#879a3b:#c5a635:#4f76a1:#855c8d:#578fa4:#b9bcba:#888987:#fb001f:#0f722f:#c47033:#186de3:#fb0067:#2e706d:#fdffb9"
+  [[Jellybeans]]
+    palette = "#929292:#e27373:#94b979:#ffba7b:#97bedc:#e1c0fa:#00988e:#dedede:#bdbdbd:#ffa1a1:#bddeab:#ffdca0:#b1d8f6:#fbdaff:#1ab2a8:#ffffff"
+    background_color = "#121212"
     background_image = None
-    use_system_font = False
-    cursor_color = "#f83e19"
-    foreground_color = "#b9bcba"
-    font = Source Code Pro for Powerline Medium 10
-    background_color = "#1f1f1f"
+    cursor_color = "#ffa560"
+    foreground_color = "#dedede"
   [[Presentation]]
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     background_image = None
@@ -80,13 +87,6 @@
     foreground_color = "#000000"
     font = Source Code Pro for Powerline Medium 16
     background_color = "#ffffff"
-  [[Twilight]]
-    palette = "#141414:#c06d44:#afb97a:#c2a86c:#44474a:#b4be7c:#778385:#ffffd4:#262626:#de7c4c:#ccd88c:#e2c47e:#5a5e62:#d0dc8e:#8a989b:#ffffd4"
-    background_image = None
-    use_system_font = False
-    cursor_color = "#ffffff"
-    foreground_color = "#ffffd4"
-    font = Liberation Mono for Powerline 10
 [layouts]
   [[default]]
     [[[child1]]]
