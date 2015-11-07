@@ -1,10 +1,14 @@
 bower
+chromeos-apk
 devtools-terminal
+geojson-minifier
 gifsicle
 gulp
 http-server
 imageoptim-cli
 jshint
 js-yaml
+livedown
 npm
 PrettyCSS
+togeojson
