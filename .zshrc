@@ -71,6 +71,9 @@ export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 # Packer for vagrant path
 export PATH=$PATH:$HOME/packer/
 
+# Dart path
+export PATH=$PATH:/usr/lib/dart/bin
+
 # git-flow-completion
 # install git-flow with apt-get
 # http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
