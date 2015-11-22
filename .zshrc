@@ -46,6 +46,9 @@ export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/android-s
 # Android Studio
 export PATH="$HOME/android-studio/bin:$PATH"
 
+# Android SDK
+export ANDROID_HOME=/home/jeff/android-sdk/sdk
+
 # Linux brew, new package manager
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
