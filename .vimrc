@@ -23,7 +23,7 @@ set expandtab               " Convert hardtabs to spaces always ;)
 set wrap
 set colorcolumn=80
 
-" html, 2 spaces 
+" html, 2 spaces
 autocmd FileType html setlocal ts=2 sts=2 sw=2
 " js, 2 spaces
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
@@ -81,7 +81,7 @@ endif
 " highlight current line in active window
 augroup CursorLineOnlyInActiveWindow
     autocmd!
-    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline 
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
     hi CursorLine cterm=NONE " remove underline in term mode
     autocmd WinLeave * setlocal nocursorline
 augroup END
@@ -143,6 +143,9 @@ autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_gb textwidth=8
 
 " Force markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Enable spell checking for text files and limit width to 80
+autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_gb textwidth=80
 
 " Remove trailing whitespace
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
