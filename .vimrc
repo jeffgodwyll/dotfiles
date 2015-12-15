@@ -294,3 +294,7 @@ let g:pymode_breakpoint = 1 " breakpoint settings
 let g:pymode_breakpoint_bind = '<leader>b'
 let g:pymode_breakpoint_cmd = ''
 let g:pymode_folding = 0
+
+" Surround.vim
+""""""""""""""
+autocmd FileType html let b:surround_47 = "<!-- \r -->" " html comments
