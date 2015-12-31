@@ -301,4 +301,7 @@ let g:pymode_folding = 0
 
 " Surround.vim
 """"""""""""""
-autocmd FileType html let b:surround_47 = "<!-- \r -->" " html comments
+" html comments
+" yss/ or VS/
+" let g:surround_{char2nr("/")="<!-- \r -->" self documenting
+autocmd FileType html let b:surround_47 = "<!-- \r -->"
