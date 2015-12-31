@@ -183,6 +183,7 @@ Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
+Plugin 'vim-scripts/indentpython.vim'
 
 Plugin 'vim-airline'
 
