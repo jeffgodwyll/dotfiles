@@ -228,7 +228,7 @@ endif
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 let NERDTreeShowHidden = 1
-let g:NERDTreeWinPos = "right"
+" let g:NERDTreeWinPos = "right"
 
 " enable emmet just for html/css
 let g:user_emmet_install_global = 0
