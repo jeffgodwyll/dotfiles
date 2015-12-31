@@ -110,7 +110,7 @@ My Vim config is optimised to make working with the following easier:
   [jedi-vim]: https://github.com/davidhalter/jedi-vimx
   [MatchTagAlways]: https://github.com/Valloric/MatchTagAlways
   [vim-json]: https://github.com/elzr/vim-json
-  [vim-jinja]: https://github.com/mitsuhiko/vim-jinja
+  [vim-jinja2-syntax]: https://github.com/glench/vim-jinja2-syntax
   [vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
   [python-mode]: https://github.com/klen/python-modei
   [vim-flake8]: https://github.com/nvie/vim-flake8
