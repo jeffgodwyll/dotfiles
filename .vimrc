@@ -196,6 +196,9 @@ Plugin 'mattn/emmet-vim'
 " Syntax checking for i3 config
 Plugin 'PotatoesMaster/i3-vim-syntax'
 
+" Vim syntax
+Plugin 'fatih/vim-go'
+
 " Enhancements
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
