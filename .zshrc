@@ -62,6 +62,12 @@ export PATH=$PATH:/usr/games
 # gcloud tool
 export PATH=$PATH:$HOME/google_appengine/
 
+#Go App Engine Path
+export PATH=$PATH:$HOME/go_appengine/
+# Go path
+export PATH=$PATH:~/.linuxbrew/opt/go/libexec/bin
+export GOPATH="$HOME/.linuxbrew/opt/go/bin"
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/jeff/google-cloud-sdk/path.zsh.inc'
 
@@ -98,3 +104,6 @@ alias utorrent='utserver -settingspath /opt/utorrent-server-alpha-v3_3/ &'
 alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
 alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias server='python -m SimpleHTTPServer'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
