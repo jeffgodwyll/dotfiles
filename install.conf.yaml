@@ -14,6 +14,8 @@
     ~/i3-exit: i3-exit
     ~/.vim: .vim/
     ~/.vimrc: .vimrc
+    ~/.config/nvim: .vim/
+    ~/.config/nvim/init.vim: .vimrc
     ~/.ssh: .ssh/
     ~/.zshrc: .zshrc
     ~/.gitconfig: .gitconfig
