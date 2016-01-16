@@ -23,5 +23,8 @@
     ~/.tmux.conf: .tmux.conf
 
 - shell:
-  - git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-  - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  - ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", "Installing vundle...Complete later in vim with BundleInstall"]
+  - ["git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm", "Installing tpm..."]
+  - ["git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew", "Installing Linuxbrew..."]
+#  - <npm-list.txt xargs -I % npm %
+  - cat npm-list.txt | xargs -I % npm %
