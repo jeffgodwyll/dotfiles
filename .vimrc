@@ -308,3 +308,5 @@ let g:pymode_folding = 0
 " yss/ or VS/
 " let g:surround_{char2nr("/")="<!-- \r -->" self documenting
 autocmd FileType html let b:surround_47 = "<!-- \r -->"
+
+let g:surround_{char2nr("{")}="{% \r %}"  " for htmljinja
