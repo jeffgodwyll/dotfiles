@@ -273,7 +273,7 @@ let g:mta_filetypes = {
 let g:livedown_autorun = 0
 let g:livedown_open = 1
 let g:livedown_port = 1337
-nmap <leader>md :call LivedownPreview()<CR>
+nmap <leader>md :LivedownPreview<CR>
 
 " CrtlP
 """""""
