@@ -182,7 +182,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 " Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
-Plugin 'glench/vim-jinja2-syntax'
+" Plugin 'glench/vim-jinja2-syntax'
+Plugin 'mitsuhiko/vim-jinja'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
@@ -202,6 +203,9 @@ Plugin 'PotatoesMaster/i3-vim-syntax'
 
 " Vim syntax
 Plugin 'fatih/vim-go'
+
+" Elixir syntax
+Plugin 'elixir-lang/vim-elixir'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
