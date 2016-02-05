@@ -1,6 +1,5 @@
 set nocompatible              " be iMproved, required
 set encoding=utf-8            " Necessary to show Unicode glyphs
-filetype off                  " required by Vundle
 
 " set line numbers
 set number
@@ -164,8 +163,12 @@ if has('nvim')
     runtime! plugin/python_setup.vim
 endif
 
+
+
 " Vundle
 """"""""
+
+filetype off                  " required by Vundle
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -224,7 +227,9 @@ Plugin 'shime/vim-livedown'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 
-call vundle#end()            " required
+call vundle#end()  " required
+
+filetype plugin indent on  " turn on plugins, indentation...
 
 " Set graphical font for gvim
 if has("gui_running")
