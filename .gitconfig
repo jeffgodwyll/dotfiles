@@ -28,7 +28,7 @@
 	editor = vim
 
 [push]
-	default = matching
+	default = simple
 
 [diff]
     tool = vimdiff
