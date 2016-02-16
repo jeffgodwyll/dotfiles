@@ -5,4 +5,5 @@
 .vim/bundle
 .vim/backup
 .vim/swap
+.netrwhist
 .ssh/
