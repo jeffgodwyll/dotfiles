@@ -257,7 +257,7 @@ bindsym $mod+b exec unity-control-center
 
 bindsym $mod+t exec thunar
 
-# bindsym $mod+t exec nautilus --no-desktop
+bindsym $mod+Shift+T exec nautilus --no-desktop
 
 # screenshot
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots/'
