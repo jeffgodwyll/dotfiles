@@ -49,10 +49,15 @@ export PATH="$HOME/android-studio/bin:$PATH"
 # Android SDK
 export ANDROID_HOME=/home/jeff/android-sdk/sdk
 
+# java8 home
+export JAVA8_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
 # Linux brew, new package manager
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+# autoenv
+source /home/jeff/.linuxbrew/opt/autoenv/activate.sh
 
 # Games
 export PATH=$PATH:/usr/games
