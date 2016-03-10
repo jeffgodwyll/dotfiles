@@ -23,7 +23,7 @@ set wrap
 set colorcolumn=80
 
 " html, 2 spaces
-autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd filetype html,htmljinja setlocal ts=2 sts=2 sw=2 colorcolumn=
 " js, 2 spaces
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
@@ -248,7 +248,7 @@ let NERDTreeShowHidden = 1
 
 " enable emmet just for html/css
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,htmljinja,css EmmetInstall
 
 set laststatus=2
 
@@ -316,6 +316,6 @@ let g:pymode_folding = 0
 " html comments
 " yss/ or VS/
 " let g:surround_{char2nr("/")="<!-- \r -->" self documenting
-autocmd FileType html let b:surround_47 = "<!-- \r -->"
+autocmd FileType html,htmljinja let b:surround_47 = "<!-- \r -->"
 
 let g:surround_{char2nr("{")}="{% \r %}"  " for htmljinja
