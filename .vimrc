@@ -227,6 +227,9 @@ Plugin 'shime/vim-livedown'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 
+
+Plugin 'avakhov/vim-yaml'
+
 call vundle#end()  " required
 
 filetype plugin indent on  " turn on plugins, indentation...
