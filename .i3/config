@@ -255,9 +255,10 @@ bindsym $mod+c exec google-chrome-unstable --disable-gpu
 # bindsym $mod+b exec gnome-control-center
 bindsym $mod+b exec unity-control-center
 
-bindsym $mod+t exec thunar
-
-bindsym $mod+Shift+T exec nautilus --no-desktop
+# primary file manager
+bindsym $mod+t exec nemo --no-desktop
+# secondary file manager
+bindsym $mod+Shift+T exec thunar 
 
 # screenshot
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots/'
