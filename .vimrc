@@ -297,6 +297,10 @@ nmap <leader>p :CtrlP<cr>
 """""""""""
 let g:syntastic_javascript_checkers = ['jshint']
 
+" show any linting errors immediately
+let g:syntastic_check_on_open = 1
+
+
 " Pymode
 """"""""
 " [[ Jump to previous class or function (normal, visual, operator modes)
@@ -322,3 +326,5 @@ let g:pymode_folding = 0
 autocmd FileType html,htmljinja let b:surround_47 = "<!-- \r -->"
 
 let g:surround_{char2nr("{")}="{% \r %}"  " for htmljinja
+
+
