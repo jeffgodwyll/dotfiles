@@ -210,6 +210,9 @@ Plugin 'fatih/vim-go'
 " Elixir syntax
 Plugin 'elixir-lang/vim-elixir'
 
+" Kotlin syntax
+Plugin 'udalov/kotlin-vim'
+
 " Enhancements
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
