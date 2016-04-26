@@ -68,18 +68,6 @@
     font = Ubuntu Mono derivative Powerline 10
     background_color = "#2e1b1b"
     scrollback_infinite = True
-  [[3024 Night]]
-    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
-    background_color = "#090300"
-    background_image = None
-    cursor_color = "#a5a2a2"
-    foreground_color = "#a5a2a2"
-  [[Jellybeans]]
-    palette = "#929292:#e27373:#94b979:#ffba7b:#97bedc:#e1c0fa:#00988e:#dedede:#bdbdbd:#ffa1a1:#bddeab:#ffdca0:#b1d8f6:#fbdaff:#1ab2a8:#ffffff"
-    background_color = "#121212"
-    background_image = None
-    cursor_color = "#ffa560"
-    foreground_color = "#dedede"
   [[Presentation]]
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     background_image = None
@@ -87,6 +75,15 @@
     foreground_color = "#000000"
     font = Source Code Pro for Powerline Medium 16
     background_color = "#ffffff"
+  [[Material for Day]]
+    palette = "#212121:#b7141f:#457b24:#fc7b08:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#fd8e09:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+    background_image = None
+    background_color = "#eaeaea"
+    show_titlebar = False
+    cursor_color = "#16afca"
+    foreground_color = "#2e2e2d"
+    use_system_font = False
+    font = Ubuntu Mono derivative Powerline 10
 [layouts]
   [[default]]
     [[[child1]]]
