@@ -349,3 +349,9 @@ let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+
+" jedi-vim
+""""""""""
+let g:jedi#goto_command='<leader>jd'  " goto definition or assignment
+let g:jedi#goto_assignments_command='<leader>jg'  " goto assignments
+let g:jedi#rename_command='<leader>jr' " rename variables
