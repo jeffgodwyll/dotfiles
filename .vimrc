@@ -341,4 +341,11 @@ autocmd FileType html,htmljinja let b:surround_47 = "<!-- \r -->"
 
 let g:surround_{char2nr("{")}="{% \r %}"  " for htmljinja
 
-
+" vim-multiple-cursors
+""""""""""""""""""""""
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_key='<leader>mc'
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
