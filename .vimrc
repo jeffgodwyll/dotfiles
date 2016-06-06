@@ -326,6 +326,8 @@ let g:syntastic_check_on_open = 1
 " aM Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)
 " iM Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)
 let g:pymode_run = 1
+let g:pymode_rope = 0
+let g:pymode_virtualenv = 1
 let g:pymode_run_bind = '<leader>r' " run python code from within vim
 let g:pymode_breakpoint = 1 " breakpoint settings
 let g:pymode_breakpoint_bind = '<leader>b'
