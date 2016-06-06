@@ -251,7 +251,7 @@ endif
 """""""""""""""""
 
 " ultinsips
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger = "<tab>"
 
 " open nerdtree
 " autocmd vimenter * NERDTree
@@ -345,15 +345,15 @@ let g:surround_{char2nr("{")}="{% \r %}"  " for htmljinja
 
 " vim-multiple-cursors
 """"""""""""""""""""""
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_start_key='<leader>mc'
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_start_key = '<leader>mc'
+let g:multi_cursor_next_key = '<C-n>'
+let g:multi_cursor_prev_key = '<C-p>'
+let g:multi_cursor_skip_key = '<C-x>'
+let g:multi_cursor_quit_key = '<Esc>'
 
 " jedi-vim
 """"""""""
-let g:jedi#goto_command='<leader>jd'  " goto definition or assignment
-let g:jedi#goto_assignments_command='<leader>jg'  " goto assignments
-let g:jedi#rename_command='<leader>jr' " rename variables
+let g:jedi#goto_command = '<leader>jd'  " goto definition or assignment
+let g:jedi#goto_assignments_command = '<leader>jg'  " goto assignments
+let g:jedi#rename_command = '<leader>jr' " rename variables
