@@ -192,6 +192,10 @@ Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
 
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 Plugin 'vim-airline'
 
 Plugin 'fugitive.vim'
@@ -241,6 +245,13 @@ filetype plugin indent on  " turn on plugins, indentation...
 if has("gui_running")
     set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
 endif
+
+
+" Plugin Settings
+"""""""""""""""""
+
+" ultinsips
+let g:UltiSnipsExpandTrigger="<tab>"
 
 " open nerdtree
 " autocmd vimenter * NERDTree
