@@ -35,7 +35,7 @@ set undolevels=1000
 
 
 " Setup folder structure
-"
+""""""""""""""""""""""""
 
 if !isdirectory(expand('~/.vim/undo/', 1))
     silent call mkdir(expand('~/.vim/undo', 1), 'p')
@@ -68,7 +68,9 @@ set hlsearch
 set ignorecase " ignore case
 set smartcase  " smart search
 
+
 " Theme settings
+""""""""""""""""
 " Falback for when colours are not available
 color elflord
 
@@ -85,6 +87,7 @@ augroup CursorLineOnlyInActiveWindow
     autocmd WinLeave * setlocal nocursorline
 augroup END
 
+
 " No fold on start
 set nofoldenable
 
@@ -93,6 +96,7 @@ set nofoldenable
 " else
 "  set background=dark
 " endif
+
 
 " Key Mappings
 """"""""""""""
@@ -118,7 +122,6 @@ nnoremap j gj
 nnoremap k gk
 
 nnoremap ; :
-
 
 " Control N twice to reveal line numbers
 nmap <C-N><C-N> :set invnumber<CR>
@@ -251,8 +254,11 @@ endif
 """""""""""""""""
 
 " ultinsips
+"""""""""""
 let g:UltiSnipsExpandTrigger = "<tab>"
 
+" nerdtree
+""""""""""
 " open nerdtree
 " autocmd vimenter * NERDTree
 
@@ -261,8 +267,9 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 let NERDTreeShowHidden = 1
-" let g:NERDTreeWinPos = "right"
 
+" emmet
+"""""""
 " enable emmet just for html/css
 let g:user_emmet_install_global = 0
 autocmd FileType html,htmljinja,css EmmetInstall
@@ -270,6 +277,7 @@ autocmd FileType html,htmljinja,css EmmetInstall
 set laststatus=2
 
 " powerline
+"""""""""""
 " installed with pip
 " pip install --user git+git://github.com/Lokaltog/powerline
 " set rtp+=~/.local/bin/powerline/bindings/vim
