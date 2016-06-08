@@ -113,7 +113,7 @@ bindsym XF86AudioNext exec qdbus org.mpris.clementine /Player Next
 # volume controls
 
 # Pulse Audio controls for sink 0, perform pulseaudio -k to use usb headset as
-# sink 0
+# sink 0 with headset inserted
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 -- +5% #increase volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% #decrease volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
