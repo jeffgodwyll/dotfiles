@@ -64,7 +64,7 @@ bindsym $mod+Shift+Q kill
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 
-# Better dmenu 
+# Better dmenu
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nb #10252b -nf #a8c9e2"
 
 # change focus
@@ -166,7 +166,7 @@ bindsym $mod+F2 exec i3-input -F 'rename workspace to "%s"' -P 'New workspace na
 set $w1 : <span foreground="#4285F4">chrome/p</span>
 # shell workspace holds vim and tmux sessions
 set $w2 : <span foreground="#EA4335">shell</span>
-set $w3 : <span foreground="#fbbc05">spotify</span>
+set $w3 : <span foreground="#fbbc05">music</span>
 set $w4 : <span foreground="#4285f4">files/videos</span>
 set $w5 : <span foreground="#34a853">irc</span>
 set $w6 : <span foreground="#EA4335">chrome/w</span>
@@ -280,7 +280,7 @@ bindsym $mod+b exec unity-control-center
 # primary file manager
 bindsym $mod+t exec nemo --no-desktop
 # secondary file manager
-bindsym $mod+Shift+T exec thunar 
+bindsym $mod+Shift+T exec thunar
 
 # screenshot
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots/'
