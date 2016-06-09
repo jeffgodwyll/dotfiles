@@ -126,6 +126,9 @@ nnoremap ; :
 " Control N twice to reveal line numbers
 nmap <C-N><C-N> :set invnumber<CR>
 
+" toggle and untoggle spell checking
+noremap <leader>ss :setlocal spell! spelllang=en_gb<cr>
+
 " toggle nerdtree file/folder tree
 nmap <C-n><C-t> :NERDTreeToggle<CR>
 
