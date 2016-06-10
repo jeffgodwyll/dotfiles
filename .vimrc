@@ -79,6 +79,10 @@ if &t_Co >= 256 || has("gui_running")
     color mustang
 endif
 
+" ColorColumn color
+hi ColorColumn term=reverse ctermbg=236 guibg=#404040
+
+
 " highlight current line in active window
 augroup CursorLineOnlyInActiveWindow
     autocmd!
