@@ -127,6 +127,9 @@ nnoremap k gk
 
 nnoremap ; :
 
+" paste toggle
+nnoremap <F6> :set paste!<cr>
+
 " Control N twice to reveal line numbers
 nmap <C-N><C-N> :set invnumber<CR>
 
