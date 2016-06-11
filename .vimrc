@@ -323,6 +323,7 @@ nmap <leader>md :LivedownPreview<CR>
 """""""
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'r'  " r=nearest .git,.hg,.svn,.bzr,_darcs dirs
+let g:ctrlp_open_new_file = 'v'  " in a new vertical split
 nmap <leader>p :CtrlP<cr>
 
 " Syntastic
