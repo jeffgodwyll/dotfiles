@@ -104,7 +104,7 @@ bindsym $mod+Shift+x move workspace to output up
 # bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 # clementine media player controls
-bindsym XF86AudioPlay exec clementine --pause
+bindsym XF86AudioPlay exec clementine --play-pause
 bindsym XF86AudioStop exec clementine --stop
 bindsym XF86AudioPrev exec clementine --previous
 bindsym XF86AudioNext exec clementine --next
