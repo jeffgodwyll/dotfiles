@@ -110,6 +110,8 @@ bindsym XF86AudioStop exec clementine --stop
 bindsym XF86AudioPrev exec clementine --previous
 bindsym XF86AudioNext exec clementine --next
 
+# no stop key on apple keyboard, remap eject key for this purpose
+bindsym XF86Eject exec clementine --stop
 
 # volume controls
 
