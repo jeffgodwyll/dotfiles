@@ -230,6 +230,10 @@ Plugin 'elixir-lang/vim-elixir'
 " Kotlin syntax
 Plugin 'udalov/kotlin-vim'
 
+" Javascript-specific
+Plugin 'ternjs/tern_for_vim'
+Plugin 'pangloss/vim-javascript'
+
 " Enhancements
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
@@ -240,6 +244,9 @@ Plugin 'valloric/MatchTagAlways'
 " Add surrounding pairs: brackets, parentheses, quotes, tags etc
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors'
+
+" Autocompletion for brackets, quotes...
+Plugin 'Raimondi/delimitMate'
 
 Plugin 'shime/vim-livedown'
 
