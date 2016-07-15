@@ -257,6 +257,9 @@ Plugin 'junegunn/limelight.vim'
 
 Plugin 'avakhov/vim-yaml'
 
+" Smarter awesome vim...
+Plugin 'sourcegraph/sourcegraph-vim'
+
 call vundle#end()  " required
 
 filetype plugin indent on  " turn on plugins, indentation...
