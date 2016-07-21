@@ -24,6 +24,7 @@
     ~/.tmux.conf: .tmux.conf
     ~/.ipython/profile_default/ipython_config.py:
       path: .ipython/profile_default/ipython_config.py
+    ~/.tern-project: .tern-project
 
 - shell:
   - ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", "Installing vundle...Complete later in vim with BundleInstall"]

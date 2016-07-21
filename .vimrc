@@ -386,3 +386,8 @@ let g:multi_cursor_quit_key = '<Esc>'
 let g:jedi#goto_command = '<leader>jd'  " goto definition or assignment
 let g:jedi#goto_assignments_command = '<leader>jg'  " goto assignments
 let g:jedi#rename_command = '<leader>jr' " rename variables
+
+" Tern
+let g:tern_map_keys=1
+let g:tern_map_prefix = '<leader>'
+let g:tern_show_argument_hints='on_hold'
