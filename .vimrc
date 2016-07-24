@@ -218,6 +218,9 @@ Plugin 'scrooloose/syntastic'
 " html code completion
 Plugin 'mattn/emmet-vim'
 
+" Autocomplete...
+Plugin 'Valloric/YouCompleteMe'
+
 " Syntax checking for i3 config
 Plugin 'PotatoesMaster/i3-vim-syntax'
 
@@ -231,7 +234,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'udalov/kotlin-vim'
 
 " Javascript-specific
-Plugin 'ternjs/tern_for_vim'
+" Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 
 " Enhancements
@@ -254,11 +257,15 @@ Plugin 'shime/vim-livedown'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 
+Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
 
 Plugin 'avakhov/vim-yaml'
 
 " Smarter awesome vim...
 Plugin 'sourcegraph/sourcegraph-vim'
+
+" Pair programming
+Plugin 'FredKSchott/CoVim'
 
 call vundle#end()  " required
 
@@ -275,7 +282,7 @@ endif
 
 " ultinsips
 """""""""""
-let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsExpandTrigger = "<leader><tab>"
 
 " nerdtree
 """"""""""
@@ -339,6 +346,7 @@ nmap <leader>p :CtrlP<cr>
 " Syntastic
 """""""""""
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_markdown_checkers = ['proselint']
 
 " show any linting errors immediately
 let g:syntastic_check_on_open = 1
@@ -391,3 +399,8 @@ let g:jedi#rename_command = '<leader>jr' " rename variables
 let g:tern_map_keys=1
 let g:tern_map_prefix = '<leader>'
 let g:tern_show_argument_hints='on_hold'
+
+" YCM
+let g:ycm_filetype_specific_completion_to_disable = {
+    \ 'python': 1
+    \}
