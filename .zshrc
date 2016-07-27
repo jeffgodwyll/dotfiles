@@ -65,7 +65,7 @@ export PATH=$PATH:/usr/games
 # Google App Engine, dev_appserver and appcfg  PATH
 # TODO: Stop using this in the future after learning to properly use the newer
 # gcloud tool
-export PATH=$PATH:$HOME/google_appengine/
+# export PATH=$PATH:$HOME/google_appengine/
 
 #Go App Engine Path
 export PATH=$PATH:$HOME/go_appengine/
