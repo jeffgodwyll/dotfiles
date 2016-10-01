@@ -118,5 +118,12 @@ alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
 alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias server='python -m SimpleHTTPServer'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/jeff/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f ~/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/jeff/google-cloud-sdk/completion.zsh.inc'
+fi
