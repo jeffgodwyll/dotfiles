@@ -234,8 +234,11 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'udalov/kotlin-vim'
 
 " Javascript-specific
-" Plugin 'ternjs/tern_for_vim'
+Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
+
+" Typescript for angular 2
+Plugin 'leafgarland/typescript-vim'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
@@ -262,7 +265,7 @@ Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
 Plugin 'avakhov/vim-yaml'
 
 " Smarter awesome vim...
-Plugin 'sourcegraph/sourcegraph-vim'
+" Plugin 'sourcegraph/sourcegraph-vim'
 
 " Pair programming
 Plugin 'FredKSchott/CoVim'
