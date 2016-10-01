@@ -38,55 +38,63 @@ antigen apply
 # For theme: override virtualenv display config
 BULLETTRAIN_VIRTUALENV_PREFIX='⚡'
 
-# Paths
-# Messy path
-# TODO: Clean up
-export PATH="~/gradle-1.11/bin:/usr/local/heroku/bin:{PATH}:/home/jeff/android-sdk/sdk/platform-tools:/home/jeff/android-sdk/sdk/tools:/usr/bin:/bin:/usr/local/bin:/usr/lib/jvm/java-7-openjdk-amd64:/algs4/bin"
+case `uname` in
+    Darwin)
+        export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+        ;;
+    Linux)
+        # Android SDK
+        export ANDROID_HOME=/home/jeff/android-sdk/sdk
 
-# Android Studio
-export PATH="$HOME/android-studio/bin:$PATH"
+        # Paths
+        export PATH="~/android-sdk/sdk/platform-tools:~/android-sdk/sdk/tools:/usr/local/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/lib/jvm/java-7-openjdk-amd64"
 
-# Android SDK
-export ANDROID_HOME=/home/jeff/android-sdk/sdk
+        # Python path
+        # export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
-# java8 home
-export JAVA8_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+        # Games
+        export PATH=$PATH:/usr/games
 
-# Linux brew, new package manager
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-# autoenv
-source /home/jeff/.linuxbrew/opt/autoenv/activate.sh
+        # Linux brew, new package manager
+        export PATH="$HOME/.linuxbrew/bin:$PATH"
+        export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+        export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
-# Games
-export PATH=$PATH:/usr/games
+        # autoenv
+        if [ -f ~/.linuxbrew/opt/autoenv/activate.sh ]; then
+            source ~/.linuxbrew/opt/autoenv/activate.sh
+        fi
+
+        # Android Studio
+        export PATH="$HOME/android-studio/bin:$PATH"
+
+        # java8 home
+        export JAVA8_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+        # Go App Engine Path
+        # export PATH=$PATH:$HOME/go_appengine/
+        # # Go path
+        # export PATH=$PATH:~/.linuxbrew/opt/go/libexec/bin
+        # export GOPATH="$HOME/.linuxbrew/opt/go/bin"
+
+        # Packer for vagrant path
+        # export PATH=$PATH:$HOME/packer/
+
+        # Dart path
+        # export PATH=$PATH:/usr/lib/dart/bin
+
+        ### Added by the Heroku Toolbelt
+        # export PATH="/usr/local/heroku/bin:$PATH"
+        ;;
+esac
+
 
 # Google App Engine, dev_appserver and appcfg  PATH
 # TODO: Stop using this in the future after learning to properly use the newer
 # gcloud tool
-# export PATH=$PATH:$HOME/google_appengine/
-
-#Go App Engine Path
-export PATH=$PATH:$HOME/go_appengine/
-# Go path
-export PATH=$PATH:~/.linuxbrew/opt/go/libexec/bin
-export GOPATH="$HOME/.linuxbrew/opt/go/bin"
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/jeff/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables zsh completion for gcloud.
-source '/home/jeff/google-cloud-sdk/completion.zsh.inc'
-
-# Python path
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
-
-# Packer for vagrant path
-export PATH=$PATH:$HOME/packer/
-
-# Dart path
-export PATH=$PATH:/usr/lib/dart/bin
+if [ -d ~/google_appengine ]; then
+    export PATH=$PATH:$HOME/google_appengine/
+fi
 
 # git-flow-completion
 # install git-flow with apt-get
