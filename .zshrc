@@ -117,6 +117,8 @@ alias utorrent='utserver -settingspath /opt/utorrent-server-alpha-v3_3/ &'
 alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
 alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias server='python -m SimpleHTTPServer'
+alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
