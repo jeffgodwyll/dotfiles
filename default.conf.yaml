@@ -1,0 +1,31 @@
+- clean: ['~']
+
+- link:
+    ~/antigen.zsh: antigen.zsh
+    ~/.config/terminator:
+      create: true
+      path: .config/terminator/
+    ~/.config/htop:
+      create: true
+      path: .config/htop/
+    ~/.dotfiles: ''
+    ~/.i3: .i3/
+    ~/.i3status.conf: .i3status.conf
+    ~/i3-exit: i3-exit
+    ~/.vim: .vim/
+    ~/.vimrc: .vimrc
+    ~/.ideavimrc: .ideavimrc
+    ~/.config/nvim: .vim/
+    ~/.config/nvim/init.vim: .vimrc
+    ~/.ssh: .ssh/
+    ~/.zshrc: .zshrc
+    ~/.gitconfig: .gitconfig
+    ~/git-flow-completion.zsh: git-flow-completion.zsh
+    ~/.tmux.conf: .tmux.conf
+    ~/.ipython/profile_default/ipython_config.py:
+      path: .ipython/profile_default/ipython_config.py
+    ~/.tern-config: .tern-config
+
+- shell:
+  - ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", "Installing vundle...Complete later in vim with BundleInstall"]
+  - ["git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm", "Installing tpm..."]

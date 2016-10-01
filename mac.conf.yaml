@@ -1,0 +1,3 @@
+- shell:
+  - ["/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"", "Installing Homebrew"]
+  - ["brew install tmux vim", "Installing needed brew packages"]
