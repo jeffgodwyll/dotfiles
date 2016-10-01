@@ -15,15 +15,15 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle github
 
-antigen bundle python
-antigen bundle virtualenv
-antigen bundle pip
-
-antigen bundle npm
-antigen bundle node
-
-antigen bundle heroku
-antigen bundle lein
+# antigen bundle python
+# antigen bundle virtualenv
+# antigen bundle pip
+#
+# antigen bundle npm
+# antigen bundle node
+#
+# antigen bundle heroku
+# antigen bundle lein
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
