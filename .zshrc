@@ -40,7 +40,11 @@ BULLETTRAIN_VIRTUALENV_PREFIX='⚡'
 
 case `uname` in
     Darwin)
+        # darwin path
         export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+        # iterm2 shell integration
+        test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
         ;;
     Linux)
         # Android SDK
