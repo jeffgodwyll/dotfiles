@@ -7,17 +7,28 @@ Overview
 * [Window Manager](#window-manager) - [i3wm](http://i3wm.org/)
 * [Editor](#editor) - Vim ([Vundle](https://github.com/gmarik/Vundle.vim) handles my vim plugins)
 * Shell - Zsh ([Antigen](https://github.com/zsh-users/antigen) is awesome)
-* Terminal - [Terminator](http://en.wikipedia.org/wiki/Gnome_Terminator)
+* Terminal:
+  - ubuntu - [Terminator](http://en.wikipedia.org/wiki/Gnome_Terminator)
+  - macosx - [iterm2 ]()
 
-I use pretty much everything out of the box but I've made some customizations to enhance my workflow
-which I'll explain in a bit ;)
+I use pretty much ~~everything~~ out of the box but I've made some customizations to enhance my workflow
+which I'll try to explain in a bit ;).
 
+---------------------
+##### NOTE:
+
+You should review any files you decide to include in your personal dotfiles.
+I'll try as much as possible to explain them as comments in the corresponding
+files. If there's any thing you need further explanation as to how it works
+and/or what it does, please open an issue so we iron out the kinks. Thanks!
+
+--------------------
 Requirements
 ------------
 
 - Set zsh as login shell:
 
-        chsh -s $(which zsh)
+      chsh -s $(which zsh)
 
 - Vim compiled with python
 
@@ -65,9 +76,10 @@ My Vim config is optimised to make working with the following easier:
 - CSS
 - HTML
 - Jinja
+- TypeScript
 - Markdown
 - Java(sometimes)
-- configuration files
+- various configuration files
 
 
 #### Python-specific plugins
@@ -126,7 +138,7 @@ Colours
 
 In Vim I use the [Mustang colour scheme][mustang]
 
-My terminal uses a variant of [monokai][monokai] or [chalk][] depending on my
+My terminal uses a variant of [monokai][monokai], [spiderman][spiderman], [the hulk][the hulk] or [chalk][chalk] depending on my
 mood :) and probably because they blend in nicely with my
 [bullet train zsh theme][bt].
 
@@ -134,3 +146,5 @@ mood :) and probably because they blend in nicely with my
 [chalk]: https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/terminator/Chalk.config
 [mustang]: http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
 [monokai]: https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/terminator/DimmedMonokai.config
+[spiderman]: https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Spiderman.itermcolors
+[the hulk]: https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/The%20Hulk.itermcolors
