@@ -68,6 +68,9 @@ good to go.
 Editor
 ------
 
+This is explained a bit more into detail at:
+https://www.jeffgodwyll.com/posts/2016/dotfile-goodness-vim/
+
 Again [Vundle](https://github.com/gmarik/Vundle.vim) handles my Vim plugins.
 
 My Vim config is optimised to make working with the following easier:
