@@ -108,6 +108,7 @@ source $HOME/git-flow-completion.zsh
 
 # Aliases
 alias aria='aria2c --file-allocation=none -c -x 10'
+alias al='aria2c --file-allocation=none --force-sequential=true -c -x 10 -i'
 alias aria_list='aria2c --file-allocation=none --force-sequential=true -c -x 10 -i'
 alias chrome=google-chrome-unstable
 alias hdmi='xrandr --output HDMI1 --auto --right-of LVDS1'
