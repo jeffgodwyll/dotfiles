@@ -275,9 +275,6 @@ Plugin 'editorconfig/editorconfig-vim'
 " Plugin 'sourcegraph/sourcegraph-vim'
 Plugin 'rizzatti/dash.vim'
 
-" Pair programming
-Plugin 'FredKSchott/CoVim'
-
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 
