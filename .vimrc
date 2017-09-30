@@ -11,6 +11,8 @@ set ruler
 " Auto indenting
 set autoindent
 
+" set shortmess=I
+
 " Tab Settings, Wraps
 """""""""""""""""""""
 
@@ -239,6 +241,9 @@ Plugin 'pangloss/vim-javascript'
 
 " Typescript for angular 2
 Plugin 'leafgarland/typescript-vim'
+Plugin 'burnettk/vim-angular'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'quramy/tsuquyomi'
 
 " Enhancements
 Plugin 'majutsushi/tagbar'
@@ -264,11 +269,19 @@ Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
 
 Plugin 'avakhov/vim-yaml'
 
+Plugin 'editorconfig/editorconfig-vim'
+
 " Smarter awesome vim...
 " Plugin 'sourcegraph/sourcegraph-vim'
+Plugin 'rizzatti/dash.vim'
 
 " Pair programming
 Plugin 'FredKSchott/CoVim'
+
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
+
+Plugin 'akz92/vim-ionic2'
 
 call vundle#end()  " required
 
@@ -354,6 +367,17 @@ let g:syntastic_markdown_checkers = ['proselint']
 " show any linting errors immediately
 let g:syntastic_check_on_open = 1
 
+" ionic html
+" this ignores all errors and checking in html
+" find a way to detect ionic html and map to syntastic quiet messages
+" let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+let syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "<ion-", "</ion-",
+            \  'plain text isn''t allowed in <head> elements',
+            \  '<base> escaping malformed URI reference',
+            \  'discarding unexpected <body>',
+            \  '<script> escaping malformed URI reference',
+            \  '</head> isn''t allowed in <body> elements'
+            \ ]
 
 " Pymode
 """"""""
@@ -407,3 +431,13 @@ let g:tern_show_argument_hints='on_hold'
 let g:ycm_filetype_specific_completion_to_disable = {
     \ 'python': 1
     \}
+
+" typescript-vim
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = '--target es5'
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+" tsuquyomi
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " shouldn't use 'tsc' checker

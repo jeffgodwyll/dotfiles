@@ -40,15 +40,24 @@ BULLETTRAIN_VIRTUALENV_PREFIX='⚡'
 
 case `uname` in
     Darwin)
+        
+        # default python
+        export PATH="/usr/local/opt/python/libexec/bin:$PATH"
         # darwin path
         export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
         # iterm2 shell integration
         test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+        # Android stuff
+        export ANDROID_HOME=~/Library/Android/sdk/
+
+        export PATH=${PATH}:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
+
         ;;
     Linux)
         # Android SDK
-        export ANDROID_HOME=/home/jeff/android-sdk/sdk
+        export ANDROID_HOME=~/android-sdk/sdk
 
         # Paths
         export PATH="~/android-sdk/sdk/platform-tools:~/android-sdk/sdk/tools:/usr/local/bin:/bin:/usr/bin:/usr/sbin:/sbin:/usr/lib/jvm/java-7-openjdk-amd64"
@@ -108,7 +117,7 @@ source $HOME/git-flow-completion.zsh
 
 # Aliases
 alias aria='aria2c --file-allocation=none -c -x 10'
-alias al='aria2c --file-allocation=none --force-sequential=true -c -x 10 -i'
+alias al='aria2c --file-allocation=none --force-sequential=true  -c -x 10 -i'
 alias aria_list='aria2c --file-allocation=none --force-sequential=true -c -x 10 -i'
 alias chrome=google-chrome-unstable
 alias hdmi='xrandr --output HDMI1 --auto --right-of LVDS1'
@@ -122,7 +131,7 @@ alias utorrent='utserver -settingspath /opt/utorrent-server-alpha-v3_3/ &'
 alias vga='xrandr --output VGA1 --auto --right-of LVDS1'
 alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias server='python -m SimpleHTTPServer'
-alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # The next line updates PATH for the Google Cloud SDK.
