@@ -229,3 +229,13 @@ fi
 
 ###-end-ng-completion###
 
+if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/jeff/google-cloud-sdk/path.zsh.inc'
+fi
+
+# added by travis gem
+if [ -f ~/.travis/travis.sh ]; then
+  source '~/.travis/travis.sh'
+fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
