@@ -54,6 +54,8 @@ case `uname` in
 
         export PATH=${PATH}:~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/tools
 
+        export PATH=~/flutter/bin:$PATH
+
         ;;
     Linux)
         # Android SDK
@@ -234,8 +236,8 @@ if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
 fi
 
 # added by travis gem
-if [ -f ~/.travis/travis.sh ]; then
-  source '~/.travis/travis.sh'
-fi
+# if [ -e ~/.travis/travis.sh ]; then
+#   source '~/.travis/travis.sh'
+# fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
