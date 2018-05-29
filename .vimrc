@@ -239,6 +239,9 @@ Plugin 'udalov/kotlin-vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 
+" React stuff
+Plugin 'mxw/vim-jsx'
+
 " Typescript for angular 2
 Plugin 'leafgarland/typescript-vim'
 Plugin 'burnettk/vim-angular'
