@@ -40,7 +40,7 @@ BULLETTRAIN_VIRTUALENV_PREFIX='⚡'
 
 case `uname` in
     Darwin)
-        
+
         # default python
         export PATH="/usr/local/opt/python/libexec/bin:$PATH"
         # darwin path
@@ -107,9 +107,9 @@ esac
 # Google App Engine, dev_appserver and appcfg  PATH
 # TODO: Stop using this in the future after learning to properly use the newer
 # gcloud tool
-if [ -d ~/google_appengine ]; then
-    export PATH=$PATH:$HOME/google_appengine/
-fi
+# if [ -d ~/google_appengine ]; then
+#    export PATH=$PATH:$HOME/google_appengine/
+# fi
 
 # git-flow-completion
 # install git-flow with apt-get
@@ -241,3 +241,8 @@ fi
 # fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+if which pyenv-virtualenv-init > /dev/null; then
+    eval "$(pyenv virtualenv-init -)";
+fi
