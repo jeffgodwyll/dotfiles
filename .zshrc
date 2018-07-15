@@ -246,3 +246,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 if which pyenv-virtualenv-init > /dev/null; then
     eval "$(pyenv virtualenv-init -)";
 fi
+
+###-tns-completion-start-###
+if [ -f /Users/jeff/.tnsrc ]; then 
+    source /Users/jeff/.tnsrc 
+fi
+###-tns-completion-end-###
