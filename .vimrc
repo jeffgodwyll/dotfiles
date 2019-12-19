@@ -144,6 +144,15 @@ nmap <C-n><C-t> :NERDTreeToggle<CR>
 " toggle tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" buffer sttings
+"
+" move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+
 " Mapping to run python code in vim
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
@@ -216,7 +225,9 @@ Plugin 'vim-airline'
 Plugin 'fugitive.vim'
 
 " Syntax checking
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'  " async checks
+
 " html code completion
 Plugin 'mattn/emmet-vim'
 
@@ -268,7 +279,7 @@ Plugin 'shime/vim-livedown'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 
-Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
+" Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
 
 Plugin 'avakhov/vim-yaml'
 
@@ -282,6 +293,10 @@ Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 
 Plugin 'akz92/vim-ionic2'
+
+" Dart stuff
+Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'reisub0/hot-reload.vim'
 
 call vundle#end()  " required
 
@@ -332,8 +347,13 @@ set laststatus=2
 let g:airline_theme = 'laederon'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1
+" let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 
 " matchtagalways
 """"""""""""""""
@@ -358,20 +378,21 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 'r'  " r=nearest .git,.hg,.svn,.bzr,_darcs dirs
 let g:ctrlp_open_new_file = 'v'  " in a new vertical split
 nmap <leader>p :CtrlP<cr>
+nmap <leader>bb :CtrlPBuffer<cr>
 
 " Syntastic
 """""""""""
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_markdown_checkers = ['proselint']
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_markdown_checkers = ['proselint']
 
 " show any linting errors immediately
-let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_open = 1
 
 " ionic html
 " this ignores all errors and checking in html
 " find a way to detect ionic html and map to syntastic quiet messages
 " let syntastic_mode_map = { 'passive_filetypes': ['html'] }
-let syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "<ion-", "</ion-",
+" let syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "<ion-", "</ion-",
             \  'plain text isn''t allowed in <head> elements',
             \  '<base> escaping malformed URI reference',
             \  'discarding unexpected <body>',
@@ -438,6 +459,29 @@ let g:typescript_compiler_options = '--target es5'
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
 
+" jsx
+let g:jsx_ext_required = 0
+
+" ale
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+" only run linters in ale_linters settings
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
+
 " tsuquyomi
 let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi'] " shouldn't use 'tsc' checker
+" let g:syntastic_typescript_checkers = ['tsuquyomi'] " shouldn't use 'tsc' checker
+
+
+" Dart and flutter settings
+let dart_style_guide = 2
+let dart_format_on_save = 1
+let dart_html_in_string=v:true
+
+
+silent! py3 pass

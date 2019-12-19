@@ -29,8 +29,12 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 
 # Theme
-antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
+if [[ -z "${TERM_PROGRAM}" ]]; then
+    antigen theme muse
+else
+    antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+fi
 
 antigen apply
 
@@ -135,6 +139,7 @@ alias vga_same='xrandr --output VGA1 --auto --same-as LVDS1'
 alias server='python -m SimpleHTTPServer'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+alias v='python3 -m venv env && source env/bin/activate'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/google-cloud-sdk/path.zsh.inc ]; then
@@ -248,7 +253,16 @@ if which pyenv-virtualenv-init > /dev/null; then
 fi
 
 ###-tns-completion-start-###
-if [ -f /Users/jeff/.tnsrc ]; then 
-    source /Users/jeff/.tnsrc 
+if [ -f /Users/jeff/.tnsrc ]; then
+    source /Users/jeff/.tnsrc
 fi
 ###-tns-completion-end-###
+
+###-tns-completion-start-###
+if [ -f /Users/jeff/.tnsrc ]; then
+    source /Users/jeff/.tnsrc
+fi
+###-tns-completion-end-###
+
+# global no match
+unsetopt nomatch
