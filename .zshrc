@@ -30,7 +30,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Theme
 
-if [[ -z "${TERM_PROGRAM}" ]]; then
+if [[ -z "${TERMINAL_EMULATOR}" ]]; then
     antigen theme muse
 else
     antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
