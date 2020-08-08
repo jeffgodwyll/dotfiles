@@ -1,0 +1,34 @@
+{
+  "window.zoomLevel": 0,
+  "terminal.integrated.fontFamily": "Monaco for Powerline",
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "editor.formatOnSave": true,
+  "tslint.autoFixOnSave": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.html": "html"
+  },
+  "editor.minimap.enabled": false,
+  "nativescript.analytics.enabled": false,
+  // "[typescriptreact]": {
+  // }
+  "[python]": {
+    "editor.rulers": [88],
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "beautify.language": {
+    "html": ["htm", "html", "django-html"]
+  },
+  "explorer.confirmDelete": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "files.autoSave": "off",
+  "dart.checkForSdkUpdates": false,
+  "editor.multiCursorModifier": "alt",
+  "python.linting.pylintPath": "/usr/local/bin/pylint",
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  "python.formatting.provider": "black",
+  "editor.rulers": []
+}
