@@ -30,5 +30,6 @@
   "python.linting.pylintPath": "/usr/local/bin/pylint",
   "python.formatting.blackPath": "/usr/local/bin/black",
   "python.formatting.provider": "black",
-  "editor.rulers": []
+  "editor.rulers": [],
+  "extensions.ignoreRecommendations": true
 }
