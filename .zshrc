@@ -15,26 +15,12 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle github
 
-# antigen bundle python
-# antigen bundle virtualenv
-# antigen bundle pip
-#
-# antigen bundle npm
-# antigen bundle node
-#
-# antigen bundle heroku
-# antigen bundle lein
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-
 # Theme
+antigen theme https://gist.github.com/jeffgodwyll/49f3ac454901fd71ec2709e3e34ed5f7 mmuse
 
-if [[ -z "${TERMINAL_EMULATOR}" ]]; then
-    antigen theme muse
-else
-    antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-fi
 
 antigen apply
 
