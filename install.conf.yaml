@@ -28,8 +28,9 @@
     ~/Library/Application Support/Code/User/settings.json: VSCode/settings.json
 
 - shell:
-  - ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", "Installing vundle...Complete later in vim with BundleInstall"]
+  - ["/usr/bin/ruby -e $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", "Installing Homebrew..."]
+  - ["brew install tmux", "Installing tmux..."]
+  - ["brew install macvim", "Installing vim..."]
+  - ["ln -s /usr/local/bin/mvim vim"]
   - ["git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm", "Installing tpm..."]
-#  - ["git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew", "Installing Linuxbrew..."]
-#  - <npm-list.txt xargs -I % npm %
-#  - cat npm-list.txt | xargs -I % npm %
+  - ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", "Installing vundle...Complete later in vim with BundleInstall"]
