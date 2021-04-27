@@ -1,21 +1,22 @@
 {
-  "window.zoomLevel": 0,
   "terminal.integrated.fontFamily": "Monaco for Powerline",
   "workbench.colorTheme": "Sublime Material Theme - Dark",
   "editor.formatOnSave": true,
   "tslint.autoFixOnSave": true,
   "files.associations": {
     "*.js": "javascriptreact",
-    "*.html": "html"
+    "*.html": "html",
+    "**/templates/**/*.html": "django-html",
   },
   "editor.minimap.enabled": false,
   "nativescript.analytics.enabled": false,
   // "[typescriptreact]": {
   // }
   "[python]": {
+
     "editor.rulers": [88],
     "editor.insertSpaces": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "beautify.language": {
     "html": ["htm", "html", "django-html"]
@@ -31,5 +32,30 @@
   "python.formatting.blackPath": "/usr/local/bin/black",
   "python.formatting.provider": "black",
   "editor.rulers": [],
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "github.gitAuthentication": false,
+  "python.languageServer": "Pylance",
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/usr/local/bin/flake8",
+  "python.linting.flake8Args": [
+    "--max-line-length=120"
+  ],
+  "python.sortImports.path": "/usr/local/bin/isort",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "editor.columnSelection": false,
+  "editor.accessibilitySupport": "off",
+  "liveshare.featureSet": "stable",
+  "html.format.templating": true,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "[django-html]": {
+    // "editor.defaultFormatter": "HookyQR.beautify"
+  }
 }

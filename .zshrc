@@ -19,7 +19,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Theme
-antigen theme https://gist.github.com/jeffgodwyll/49f3ac454901fd71ec2709e3e34ed5f7 mmuse
+antigen theme https://gist.github.com/jeffgodwyll/0d7abb9d992fdceb3ba86f299fa2dc70 mmuse
 
 
 antigen apply
